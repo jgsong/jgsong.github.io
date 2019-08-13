@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Futura, Helvetica, sans-serif;
+  background-color: #ff3f34;
+  color: #0b0b09cc;
+  margin: 0;
+}
+
+.flexibility {
+  display: grid;
+  grid-template-columns: 100px 100px 1fr 100px;
+  grid-template-rows: 
+    100px 
+    1fr 
+    100px;
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+
+section {
+  height: 100vh;
+}
+
+.bar-top {
+  grid-column: 1 / 5;
+  grid-row: 1;
+  background-color: #f6f3ea; 
+}
+
+.bar-right {
+  grid-column: 4;
+  grid-row: 1 / 4;
+  background-color: #f6f3ea; 
+}
+
+.title{
+  grid-row: 3 / 4;
+  box-sizing: border-box;
+}

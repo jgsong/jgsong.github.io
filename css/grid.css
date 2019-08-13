@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.titles {
+  grid-column: 3 / 11;
+  grid-row: 1;
+}
+
+.nav-menu { 
+  grid-column: 3 / 11;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content {
+  grid-column: 2 / 12;
+  grid-row: 3/5;
+}
