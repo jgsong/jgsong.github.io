@@ -1,0 +1,123 @@
+.guides {
+  border: 1px solid black;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 100px 100px 1fr 100px;
+  grid-template-rows: 100px 1fr 100px;
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+
+section {
+  height: 100vh;
+}
+
+.bar-top {
+  grid-column: 1/5;
+  grid-row: 1;
+  background-color: #f6f3ea;
+}
+
+.bar-right {
+  grid-column: 4;
+  grid-row: 1/4;
+  background-color: #f6f3ea;
+}
+
+.title {
+  grid-row: 3/4;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Futura, Helvetica, sans-serif;
+  background-color: #ff3f34;
+  color: #0b0b09cc;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Futura, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: 3.375em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+p {
+  line-height: 1.5;
+}
+p .p1 {
+  font-size: 1.1em;
+}
+p .p2 {
+  font-size: 1em;
+}
+p .p3 {
+  font-size: 0.9em;
+}
+
+small {
+  font-size: 0.667em;
+}
+
+.overline {
+  font-size: 0.667em;
+}
+
+/*# sourceMappingURL=styles.css.map */

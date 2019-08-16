@@ -1,0 +1,7 @@
+{
+  "name": "jgsong.github.io",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "sass --watch styles/base.scss:styles/css/styles.css"
+  }
+}
