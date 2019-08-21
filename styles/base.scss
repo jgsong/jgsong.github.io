@@ -4,28 +4,28 @@
 // Typography
 $base-font-size: 16px;
 $header-font-stack: Futura, Helvetica, sans-serif;
-$body-font-stack: Source Sans Pro;
+$base-font-stack: Source Sans Pro;
 
 // Breakpoints
- /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) { }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) { }
 
- /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) { }
- 
- /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) { }
- 
- /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) { }
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) { } 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) { }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) { }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) { }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) { } 
 
 html { font-size: $base-font-size; }
 
 body {
-  font-family: Futura, Helvetica, sans-serif;
+  font-family: $base-font-stack;
   background-color: #ff3f34;
   color: #0b0b09cc;
   margin: 0;
@@ -39,7 +39,7 @@ body {
 //1em
 //0.667em
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3 {
   font-family: $header-font-stack;
   font-weight: 400;
   line-height: 1.15;
@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 3.375em;
   line-height: 1.1;
+  margin: 0;
 }
 
 h2 {
@@ -87,6 +88,7 @@ small {
 
 .overline {
   font-size : .667em;
+  text-transform: uppercase;
 }
 
 
