@@ -77,18 +77,6 @@ h1,
   font-weight: 600;
   text-transform: capitalize;
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 768px) {
-  h1,
-  .h1 {
-    font-size: 2.25em;
-  }
-
-  h2,
-  .h2 {
-    font-size: 1.5em;
-  }
-}
 
 h2,
 .h2 {
@@ -118,6 +106,19 @@ h5,
   font-family: $base-font-stack;
   line-height: 1;
   margin: 0;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+  h1,
+  .h1 {
+    font-size: 2.25em;
+  }
+
+  h2,
+  .h2 {
+    font-size: 1.5em;
+  }
 }
 
 // Paragraph
