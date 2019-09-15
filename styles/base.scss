@@ -163,17 +163,19 @@ overline,
 
 // CSS Grid
 section {
-  display: grid;
-  gap: 2em;
   margin-bottom: 2em;
 }
 
 .grid-1-col {
+  // Delete? May not need this at all. regular display:block is same as 1-col
+  display: grid;
+  gap: 2em;
   grid-template-columns: auto;
   grid-auto-rows: auto;
 }
 
 .grid-12-col {
+  display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: auto;
   column-gap: 2em;
@@ -226,9 +228,12 @@ section {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   section {
     gap: 1em;
+  }
+  .grid-12-col {
+    column-gap: 0;
   }
 }
 
@@ -263,16 +268,15 @@ section {
     display: flex;
     justify-content: space-between;
     min-width: 200px;
+    font-weight: 400;
   }
 
+  //0-600px
   @media only screen and (max-width: 600px) {
     .nav-bar__links {
       display: none;
     }
   }
-}
-
-ul {
 }
 
 .full-width {
