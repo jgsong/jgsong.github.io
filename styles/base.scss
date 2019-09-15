@@ -169,7 +169,7 @@ section {
 .grid-1-col {
   // Delete? May not need this at all. regular display:block is same as 1-col
   display: grid;
-  gap: 2em;
+  gap: 1em;
   grid-template-columns: auto;
   grid-auto-rows: auto;
 }
@@ -229,9 +229,6 @@ section {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) {
-  section {
-    gap: 1em;
-  }
   .grid-12-col {
     column-gap: 0;
   }
