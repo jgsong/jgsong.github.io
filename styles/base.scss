@@ -1,3 +1,4 @@
+@import "global";
 @import "utility";
 
 // Typography
@@ -40,6 +41,13 @@ body {
   max-width: 960px;
 }
 /* width at which max-width + margin no longer holds all content */
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 0 1rem;
+  }
+}
+
+/* width at which max-width + margin no longer holds all content */
 @media only screen and (min-width: 1024px) {
   .container {
     margin: 0 auto;
@@ -56,9 +64,10 @@ body {
 
 //.. Display ..//
 .display-1 {
-  font-size: 5.0625;
+  font-size: 5.0625rem;
   font-weight: 300;
   line-height: 1;
+  margin-bottom: 0;
 }
 
 //.. Headers ..//
@@ -69,7 +78,19 @@ h3,
 .h2,
 .h3 {
   font-family: $header-font-stack;
-  margin: 0;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  margin-bottom: 1rem;
 }
 
 h1,
@@ -91,6 +112,7 @@ h2,
 h3,
 .h3 {
   font-size: 1.5rem;
+  font-weight: 600;
   line-height: 1.2;
 }
 
@@ -107,7 +129,6 @@ h5,
   font-weight: 600;
   font-family: $base-font-stack;
   line-height: 1;
-  margin: 0;
 }
 
 // 0-768px
@@ -125,7 +146,9 @@ h5,
 
 // Paragraph
 p {
+  font-size: 1rem;
   line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
 .p1 {
@@ -136,7 +159,6 @@ p {
 
 .p2 {
   @extend p;
-  font-size: 1rem;
 }
 
 .p3 {
@@ -158,13 +180,13 @@ small,
 }
 
 .caption {
-  @extend small;
+  font-size: 0.8rem;
   color: #4d5a6a;
-  line-height: 1.1rem;
+  line-height: 1.25rem;
   margin-bottom: 1rem;
+  margin-top: 0.5rem;
 }
 
-overline,
 .overline {
   @extend small;
   text-transform: uppercase;
@@ -267,7 +289,7 @@ section {
       @extend small;
       font-family: Helvetica, sans-serif;
       line-height: 1;
-      letter-spacing: .25rem;
+      letter-spacing: 0.25rem;
       text-transform: uppercase;
       font-weight: 600;
     }
@@ -279,7 +301,7 @@ section {
     justify-content: space-between;
     min-width: 200px;
     text-transform: uppercase;
-    letter-spacing: .125rem;
+    letter-spacing: 0.125rem;
   }
 
   //0-600px
@@ -296,20 +318,13 @@ section {
 }
 
 .box {
-  //margin: 2em 0;
   background-color: #e1e6e9;
   padding: 1.5rem;
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 768px) {
-  .box {
-    margin: 0;
-  }
-}
 
 img.sm {
-  width: 4rrem;
-  height: 4rrem;
+  width: 4rem;
+  height: 4rem;
   margin-bottom: 1rem;
 }
 
@@ -319,5 +334,5 @@ img.md {
 img.lg {
   width: auto;
   height: auto;
-  padding: 2rrem;
+  padding: 2rem;
 }
