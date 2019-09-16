@@ -20,6 +20,14 @@
   margin-bottom: 0;
 }
 
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
 .my-0 {
   margin-top: 0;
   margin-bottom: 0;
@@ -46,11 +54,8 @@
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-html {
-  font-size: 18px;
-}
-
 body {
+  font-size: 16px;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
   color: #0b0b09cc;
@@ -58,7 +63,7 @@ body {
 }
 
 .container {
-  margin: 0 2em;
+  margin: 0 2rem;
   max-width: 960px;
 }
 
@@ -68,6 +73,12 @@ body {
     margin: 0 auto;
   }
 }
+.display-1 {
+  font-size: 5.0625;
+  font-weight: 300;
+  line-height: 1;
+}
+
 h1,
 h2,
 h3,
@@ -80,22 +91,15 @@ h3,
 
 h1,
 .h1 {
-  font-size: 3.375em;
-  line-height: 1.2;
-  font-weight: 600;
+  font-size: 3.375rem;
+  line-height: 1.1;
+  font-weight: 400;
   text-transform: capitalize;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 768px) {
-  h1,
-.h1 {
-    font-size: 2.25em;
-  }
-}
 h2,
 .h2 {
-  font-size: 2.25em;
+  font-size: 2.25rem;
   font-weight: 600;
   line-height: 1.2;
   text-transform: capitalize;
@@ -103,69 +107,81 @@ h2,
 
 h3,
 .h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   line-height: 1.2;
 }
 
 h4,
 .h4 {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   font-family: Helvetica, sans-serif;
   line-height: 1;
 }
 
 h5,
 .h5 {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 600;
   font-family: Helvetica, sans-serif;
   line-height: 1;
   margin: 0;
 }
 
-p {
+@media only screen and (max-width: 768px) {
+  h1,
+.h1 {
+    font-size: 2.25rem;
+  }
+
+  h2,
+.h2 {
+    font-size: 1.5rem;
+  }
+}
+p, .p3, .p2, .p1 {
   line-height: 1.5;
 }
 
 .p1 {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   margin-top: 0;
 }
 
 .p2 {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .p3 {
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
-small, overline,
+small, .nav-bar .nav-bar__links, .nav-bar .nav-bar__logo .nav-bar__logo__text, overline,
 .overline, .caption,
 .small {
-  font-size: 0.667em;
+  font-size: 0.667rem;
 }
 
 .caption {
-  margin-top: 1em;
   color: #4d5a6a;
+  line-height: 1.1rem;
+  margin-bottom: 1rem;
 }
 
 overline,
 .overline {
   text-transform: uppercase;
   line-height: 1;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
   letter-spacing: 0.8pt;
 }
 
 section {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 .grid-1-col {
   display: grid;
-  gap: 1em;
+  gap: 1rem;
   grid-template-columns: auto;
   grid-auto-rows: auto;
 }
@@ -174,8 +190,8 @@ section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: auto;
-  column-gap: 2em;
-  row-gap: 1em;
+  column-gap: 2rem;
+  row-gap: 1rem;
   align-items: start;
 }
 .grid-12-col .col-1-5 {
@@ -224,9 +240,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 64px;
-  border-bottom: 1px solid;
-  margin-bottom: 1em;
+  min-height: 54px;
 }
 .nav-bar .nav-bar__logo {
   display: flex;
@@ -234,21 +248,23 @@ section {
   align-items: center;
 }
 .nav-bar .nav-bar__logo .nav-bar__logo__image {
-  height: 2em;
-  width: 2em;
-  margin: 4px;
+  height: 1rem;
+  width: auto;
+  margin-right: 0.5rem;
 }
 .nav-bar .nav-bar__logo .nav-bar__logo__text {
-  font-size: 1.3em;
   font-family: Helvetica, sans-serif;
+  line-height: 1;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
   font-weight: 600;
-  margin-left: 8px;
 }
 .nav-bar .nav-bar__links {
   display: flex;
   justify-content: space-between;
   min-width: 200px;
-  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
 }
 @media only screen and (max-width: 600px) {
   .nav-bar .nav-bar__links {
@@ -263,7 +279,7 @@ section {
 
 .box {
   background-color: #e1e6e9;
-  padding: 1.5em;
+  padding: 1.5rem;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -273,15 +289,15 @@ section {
   }
 }
 img.sm {
-  width: 4rem;
-  height: 4rem;
-  margin-bottom: 1em;
+  width: 4rrem;
+  height: 4rrem;
+  margin-bottom: 1rem;
 }
 
 img.lg {
   width: auto;
   height: auto;
-  padding: 2rem;
+  padding: 2rrem;
 }
 
 /*# sourceMappingURL=styles.css.map */
