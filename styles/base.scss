@@ -1,10 +1,14 @@
 @import "global";
 @import "utility";
 
+//Source Sans Pro
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap');
+
 // Typography
 $base-font-size: 16px;
-$header-font-stack: Helvetica, sans-serif;
-$base-font-stack: Helvetica, sans-serif; //Source Sans Pro, Helvetica, sans-serif;
+$header-font-stack: Work Sans, Helvetica, sans-serif;
+$base-font-stack: Source Sans Pro, Helvetica, sans-serif; //Source Sans Pro, Helvetica, sans-serif;
 
 // Breakpoints
 /* Extra small devices (phones, 600px and down) */
@@ -31,7 +35,7 @@ $base-font-stack: Helvetica, sans-serif; //Source Sans Pro, Helvetica, sans-seri
 body {
   font-size: $base-font-size;
   font-family: $base-font-stack;
-  font-weight: 300;
+  font-weight: 400;
   color: #0b0b09cc;
   margin: 0;
 }
@@ -66,7 +70,7 @@ body {
 .display-1 {
   font-size: 5.0625rem;
   font-weight: 300;
-  line-height: 1;
+  line-height: 1.1;
   margin-bottom: 0;
 }
 
@@ -87,9 +91,8 @@ h2,
 h3,
 .h3,
 h4,
-.h4,
-h5,
-.h5 {
+.h4
+{
   margin-bottom: 1rem;
 }
 
@@ -97,8 +100,7 @@ h1,
 .h1 {
   font-size: 3.375rem;
   line-height: 1.1;
-  font-weight: 400;
-  text-transform: capitalize;
+  font-weight: 500;
 }
 
 h2,
@@ -119,14 +121,7 @@ h3,
 h4,
 .h4 {
   font-size: 1.1rem;
-  font-family: $base-font-stack;
-  line-height: 1;
-}
-
-h5,
-.h5 {
-  font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   font-family: $base-font-stack;
   line-height: 1;
 }
@@ -153,8 +148,9 @@ p {
 
 .p1 {
   @extend p;
-  font-size: 1.1rem;
-  margin-top: 0;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
 }
 
 .p2 {
@@ -163,7 +159,7 @@ p {
 
 .p3 {
   @extend p;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 // Link
@@ -191,7 +187,6 @@ small,
   @extend small;
   text-transform: uppercase;
   line-height: 1;
-  margin-bottom: 0.5rem;
   letter-spacing: 0.8pt;
 }
 
@@ -289,7 +284,7 @@ section {
       @extend small;
       font-family: Helvetica, sans-serif;
       line-height: 1;
-      letter-spacing: 0.25rem;
+      letter-spacing: 2px;
       text-transform: uppercase;
       font-weight: 600;
     }
