@@ -1,0 +1,337 @@
+@import "spacing";
+
+/* Font Imports */
+
+//Source Sans Pro
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700&display=swap');
+//Work Sans
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap');
+
+// Typography
+$base-font-size: 16px;
+
+$header-font-stack: Work Sans, Helvetica, sans-serif;
+$base-font-stack: Source Sans Pro, Helvetica, sans-serif; 
+
+// Breakpoints
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+//.. Globals ..//
+body {
+  font-size: $base-font-size;
+  font-family: $base-font-stack;
+  font-weight: 400;
+  color: #0b0b09cc;
+  @include u-margin--0;
+}
+
+.container {
+  margin: 0 2rem;
+  max-width: 960px;
+}
+
+/* width at which max-width + margin no longer holds all content */
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 0 1rem;
+  }
+}
+
+/* width at which max-width + margin no longer holds all content */
+@media only screen and (min-width: 1024px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+
+//Type Scale
+//3.375em
+//2.25em
+//1.5em
+//1.1em
+//1em
+//0.667em
+
+//.. Display ..//
+.display-1 {
+  font-size: 5.0625rem;
+  font-weight: 300;
+  line-height: 1.1;
+  @include u-marginBottom--0;
+}
+
+//.. Headers ..//
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  font-family: $header-font-stack;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4
+{
+  @include u-marginBottom--2;
+}
+
+h1,
+.h1 {
+  font-size: 3.375rem;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+h2,
+.h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+h3,
+.h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h4,
+.h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: $base-font-stack;
+  line-height: 1;
+}
+
+// 0-768px
+@media only screen and (max-width: 768px) {
+  h1,
+  .h1 {
+    font-size: 2.25rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 1.5rem;
+  }
+}
+
+// Paragraph
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  @include u-marginBottom--2;
+}
+
+.p1 {
+  @extend p;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.p2 {
+  @extend p;
+}
+
+.p3 {
+  @extend p;
+  font-size: 0.8rem;
+}
+
+// Link
+
+a {
+  //TODO
+}
+
+//Misc
+
+small,
+.small {
+  font-size: 0.667rem;
+}
+
+.caption {
+  font-size: 0.8rem;
+  color: #4d5a6a;
+  line-height: 1.25rem;
+  @include u-marginBottom--2;
+  @include u-marginTop--1;
+}
+
+.overline {
+  @extend small;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.8pt;
+}
+
+// CSS Grid
+section {
+  @include u-marginBottom--4;
+}
+
+.grid-1-col {
+  // Delete? May not need this at all. regular display:block is same as 1-col
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto;
+  grid-auto-rows: auto;
+}
+
+.grid-12-col {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: auto;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  align-items: start;
+
+  .col-1-5 {
+    grid-column: 1 / 5;
+  }
+
+  .col-1-7 {
+    grid-column: 1 / 7;
+  }
+
+  .col-1-9 {
+    grid-column: 1 / 9;
+  }
+
+  .col-1-13 {
+    grid-column: 1 / 13;
+  }
+
+  .col-5-9 {
+    grid-column: 5 / 9;
+  }
+
+  .col-5-13 {
+    grid-column: 5 / 13;
+  }
+
+  .col-7-13 {
+    grid-column: 7 / 13;
+  }
+
+  .col-9-13 {
+    grid-column: 9 / 13;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .col-1-5,
+    .col-1-7,
+    .col-1-9,
+    .col-5-9,
+    .col-7-13,
+    .col-5-13,
+    .col-9-13 {
+      grid-column: 1 / 13;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+  .grid-12-col {
+    column-gap: 0;
+  }
+}
+
+// Components
+.nav-bar {
+  @include u-marginBottom--2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 54px;
+
+  .nav-bar__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .nav-bar__logo__image {
+      height: 1rem;
+      width: auto;
+      margin-right: 0.5rem;
+    }
+    .nav-bar__logo__text {
+      @extend small;
+      font-family: Helvetica, sans-serif;
+      line-height: 1;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+
+  .nav-bar__links {
+    @extend small;
+    display: flex;
+    justify-content: space-between;
+    min-width: 200px;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+  }
+
+  //0-600px
+  @media only screen and (max-width: 600px) {
+    .nav-bar__links {
+      display: none;
+    }
+  }
+}
+
+.full-width {
+  width: 100%;
+  height: auto;
+}
+
+.box {
+  background-color: #e1e6e9;
+  padding: 1.5rem;
+}
+
+img.sm {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+img.md {
+}
+
+img.lg {
+  width: auto;
+  height: auto;
+  padding: 2rem;
+}

@@ -1,34 +1,149 @@
-.mb-0 {
-    margin-bottom: 0;
-}
-.mb-1 {
-    margin-bottom: 1em;
-}
-.mb-2 {
-    margin-bottom: 2em;
-}
-.mb-3 {
-    margin-bottom: 3em;
-}
-.mb-4 {
-    margin-bottom: 4em;
-}
-.my-0{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.mt-0 {
-    margin-top: 0;
-}  
+// margin
 
-.mt-1 {
-    margin-top: 1em;
+.u-margin--0 {
+  @include u-margin--0;
 }
 
-.mt-2 {
-    margin-top: 2em;
-}  
+.u-margin--1 {
+  @include u-margin--1;
+}
 
-.mt-3 {
-    margin-top: 3em;
-}  
+.u-margin--2 {
+  @include u-margin--2;
+}
+
+.u-margin--3 {
+  @include u-margin--3;
+}
+
+.u-margin--4 {
+  @include u-margin--4;
+}
+
+.u-margin--5 {
+  @include u-margin--5;
+}
+
+.u-margin--6 {
+  @include u-margin--6;
+}
+
+// marginTop
+
+.u-marginTop--0 {
+  @include u-marginTop--0;
+}
+
+.u-marginTop--1 {
+  @include u-marginTop--1;
+}
+
+.u-marginTop--2 {
+  @include u-marginTop--2;
+}
+
+.u-marginTop--3 {
+  @include u-marginTop--3;
+}
+
+.u-marginTop--4 {
+  @include u-marginTop--4;
+}
+
+.u-marginTop--5 {
+  @include u-marginTop--5;
+}
+
+.u-marginTop--6 {
+  @include u-marginTop--6;
+}
+
+// marginLeft
+
+.u-marginLeft--0 {
+  @include u-marginLeft--0;
+}
+
+.u-marginLeft--1 {
+  @include u-marginLeft--1;
+}
+
+.u-marginLeft--2 {
+  @include u-marginLeft--2;
+}
+
+.u-marginLeft--3 {
+  @include u-marginLeft--3;
+}
+
+.u-marginLeft--4 {
+  @include u-marginLeft--4;
+}
+
+.u-marginLeft--5 {
+  @include u-marginLeft--5;
+}
+
+.u-marginLeft--6 {
+  @include u-marginLeft--6;
+}
+
+// marginBottom
+
+.u-marginBottom--0 {
+  @include u-marginBottom--0;
+}
+
+.u-marginBottom--1 {
+  @include u-marginBottom--1;
+}
+
+.u-marginBottom--2 {
+  @include u-marginBottom--2;
+}
+
+.u-marginBottom--3 {
+  @include u-marginBottom--3;
+}
+
+.u-marginBottom--4 {
+  @include u-marginBottom--4;
+}
+
+.u-marginBottom--5 {
+  @include u-marginBottom--5;
+}
+
+.u-marginBottom--6 {
+  @include u-marginBottom--6;
+}
+
+// marginRight
+
+.u-marginRight--0 {
+  @include u-marginRight--0;
+}
+
+.u-marginRight--1 {
+  @include u-marginRight--1;
+}
+
+.u-marginRight--2 {
+  @include u-marginRight--2;
+}
+
+.u-marginRight--3 {
+  @include u-marginRight--3;
+}
+
+.u-marginRight--4 {
+  @include u-marginRight--4;
+}
+
+.u-marginRight--5 {
+  @include u-marginRight--5;
+}
+
+.u-marginRight--6 {
+  @include u-marginRight--6;
+}

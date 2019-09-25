@@ -1,0 +1,158 @@
+$spacing-base: 8;
+
+$s-1: $spacing-base;
+$s-2: $spacing-base * 2;
+$s-3: $spacing-base * 3;
+$s-4: $spacing-base * 4;
+$s-5: $spacing-base * 5;
+$s-6: $spacing-base * 6;
+
+// margin
+
+@mixin u-margin--0 {
+  margin: 0;
+}
+
+@mixin u-margin--1 {
+  margin: $s-1 + px;
+}
+
+@mixin u-margin--2 {
+  margin: $s-2 + px;
+}
+
+@mixin u-margin--3 {
+  margin: $s-3 + px;
+}
+
+@mixin u-margin--4 {
+  margin: $s-4 + px;
+}
+
+@mixin u-margin--5 {
+  margin: $s-5 + px;
+}
+
+@mixin u-margin--6 {
+  margin: $s-6 + px;
+}
+
+// marginTop
+
+@mixin u-marginTop--0 {
+  margin-top: 0;
+}
+
+@mixin u-marginTop--1 {
+  margin-top: $s-1 + px;
+}
+
+@mixin u-marginTop--2 {
+  margin-top: $s-2 + px;
+}
+
+@mixin u-marginTop--3 {
+  margin-top: $s-3 + px;
+}
+
+@mixin u-marginTop--4 {
+  margin-top: $s-4 + px;
+}
+
+@mixin u-marginTop--5 {
+  margin-top: $s-5 + px;
+}
+
+@mixin u-marginTop--6 {
+  margin-top: $s-6 + px;
+}
+
+// marginLeft
+
+@mixin u-marginLeft--0 {
+  margin-left: 0;
+}
+
+@mixin u-marginLeft--1 {
+  margin-left: $s-1 + px;
+}
+
+@mixin u-marginLeft--2 {
+  margin-left: $s-2 + px;
+}
+
+@mixin u-marginLeft--3 {
+  margin-left: $s-3 + px;
+}
+
+@mixin u-marginLeft--4 {
+  margin-left: $s-4 + px;
+}
+
+@mixin u-marginLeft--5 {
+  margin-left: $s-5 + px;
+}
+
+@mixin u-marginLeft--6 {
+  margin-left: $s-6 + px;
+}
+
+// marginBottom
+
+@mixin u-marginBottom--0 {
+  margin-bottom: 0;
+}
+
+@mixin u-marginBottom--1 {
+  margin-bottom: $s-1 + px;
+}
+
+@mixin u-marginBottom--2 {
+  margin-bottom: $s-2 + px;
+}
+
+@mixin u-marginBottom--3 {
+  margin-bottom: $s-3 + px;
+}
+
+@mixin u-marginBottom--4 {
+  margin-bottom: $s-4 + px;
+}
+
+@mixin u-marginBottom--5 {
+  margin-bottom: $s-5 + px;
+}
+
+@mixin u-marginBottom--6 {
+  margin-bottom: $s-6 + px;
+}
+
+// marginRight
+
+@mixin u-marginRight--0 {
+  margin-right: 0;
+}
+
+@mixin u-marginRight--1 {
+  margin-right: $s-1 + px;
+}
+
+@mixin u-marginRight--2 {
+  margin-right: $s-2 + px;
+}
+
+@mixin u-marginRight--3 {
+  margin-right: $s-3 + px;
+}
+
+@mixin u-marginRight--4 {
+  margin-right: $s-4 + px;
+}
+
+@mixin u-marginRight--5 {
+  margin-right: $s-5 + px;
+}
+
+@mixin u-marginRight--6 {
+  margin-right: $s-6 + px;
+}
