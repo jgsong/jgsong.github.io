@@ -1,152 +1,123 @@
 @import "spacing";
+@import "typography";
 
-/* Font Imports */
+/* Breakpoints */
 
-//Source Sans Pro
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700&display=swap');
-//Work Sans
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap');
-
-// Typography
-$base-font-size: 16px;
-
-$header-font-stack: Work Sans, Helvetica, sans-serif;
-$base-font-stack: Source Sans Pro, Helvetica, sans-serif; 
-
-// Breakpoints
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@mixin for-phone-only {
+  @media (max-width: 767px) {
+    @content;
+  }
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@mixin for-tablet-up {
+  @media (min-width: 768px) {
+    @content;
+  }
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
-
-//.. Globals ..//
-body {
-  font-size: $base-font-size;
-  font-family: $base-font-stack;
-  font-weight: 400;
-  color: #0b0b09cc;
-  @include u-margin--0;
-}
-
-.container {
-  margin: 0 2rem;
-  max-width: 960px;
-}
-
-/* width at which max-width + margin no longer holds all content */
-@media only screen and (max-width: 600px) {
-  .container {
-    margin: 0 1rem;
+@mixin for-desktop-up {
+  // 1024px - width at which max-width + margin no longer holds all content
+  @media (min-width: 1024px) {
+    @content;
   }
 }
 
-/* width at which max-width + margin no longer holds all content */
-@media only screen and (min-width: 1024px) {
-  .container {
+//.. Components ..//
+
+.container {
+  max-width: 960px;
+  @include u-marginLeft--2;
+  @include u-marginRight--2;
+
+  @include for-tablet-up {
+    @include u-marginLeft--4;
+    @include u-marginRight--4;
+  }
+
+  @include for-desktop-up {
     margin: 0 auto;
   }
 }
 
-//Type Scale
-//3.375em
-//2.25em
-//1.5em
-//1.1em
-//1em
-//0.667em
-
 //.. Display ..//
 .display-1 {
-  font-size: 5.0625rem;
+  @include t-font-size__desktop--4;
   font-weight: 300;
   line-height: 1.1;
+
   @include u-marginBottom--0;
+
+  @include for-desktop-up {
+    @include t-font-size__desktop--4;
+  }
 }
 
-//.. Headers ..//
-h1,
-h2,
-h3,
-.h1,
-.h2,
-.h3 {
-  font-family: $header-font-stack;
-}
+.display-2 {
+  @include t-font-size__desktop--3;
+  font-weight: 300;
+  line-height: 1.1;
 
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4
-{
-  @include u-marginBottom--2;
+  @include u-marginBottom--0;
+
+  @include for-desktop-up {
+    @include t-font-size__desktop--3;
+  }
 }
 
 h1,
 .h1 {
-  font-size: 3.375rem;
+  @include t-font-size__mobile--4;
+  font-family: $header-font-stack;
   line-height: 1.1;
   font-weight: 500;
+
+  @include u-marginBottom--2;
+
+  @include for-desktop-up {
+    @include t-font-size__desktop--3;
+  }
 }
 
 h2,
 .h2 {
-  font-size: 2.25rem;
+  @include t-font-size__mobile--3;
+  font-family: $header-font-stack;
   font-weight: 600;
   line-height: 1.2;
   text-transform: capitalize;
+
+  @include u-marginBottom--2;
+
+  @include for-desktop-up {
+    @include t-font-size__desktop--2;
+  }
 }
 
 h3,
 .h3 {
-  font-size: 1.5rem;
+  @include t-font-size__mobile--1;
+  font-family: $header-font-stack;
   font-weight: 600;
   line-height: 1.2;
+
+  @include u-marginBottom--2;
+
+  @include for-desktop-up {
+    @include t-font-size__desktop--1;
+  }
 }
 
 h4,
 .h4 {
-  font-size: 1.1rem;
-  font-weight: 700;
   font-family: $base-font-stack;
+  font-weight: 700;
   line-height: 1;
-}
 
-// 0-768px
-@media only screen and (max-width: 768px) {
-  h1,
-  .h1 {
-    font-size: 2.25rem;
-  }
-
-  h2,
-  .h2 {
-    font-size: 1.5rem;
-  }
+  @include u-marginBottom--2;
 }
 
 // Paragraph
 p {
-  font-size: 1rem;
   line-height: 1.5;
+
   @include u-marginBottom--2;
 }
 
@@ -165,25 +136,24 @@ p {
   font-size: 0.8rem;
 }
 
-// Link
-
-a {
-  //TODO
-}
-
 //Misc
 
 small,
 .small {
-  font-size: 0.667rem;
+  @include t-font-size__mobile--small;
+
+  @include for-desktop-up {
+    @include t-font-size__desktop--small;
+  }
 }
 
 .caption {
-  font-size: 0.8rem;
+  @extend small;
   color: #4d5a6a;
   line-height: 1.25rem;
-  @include u-marginBottom--2;
+
   @include u-marginTop--1;
+  @include u-marginBottom--2;
 }
 
 .overline {
@@ -191,6 +161,8 @@ small,
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: 0.8pt;
+
+  
 }
 
 // CSS Grid
@@ -285,8 +257,7 @@ section {
       margin-right: 0.5rem;
     }
     .nav-bar__logo__text {
-      @extend small;
-      font-family: Helvetica, sans-serif;
+      @include t-font-size__desktop--small;
       line-height: 1;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -295,7 +266,7 @@ section {
   }
 
   .nav-bar__links {
-    @extend small;
+    @include t-font-size__desktop--small;
     display: flex;
     justify-content: space-between;
     min-width: 200px;
@@ -319,6 +290,8 @@ section {
 .box {
   background-color: #e1e6e9;
   padding: 1.5rem;
+
+  @include u-marginBottom--2;
 }
 
 img.sm {

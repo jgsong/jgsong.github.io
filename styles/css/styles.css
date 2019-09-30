@@ -36,9 +36,8 @@ q,
 s,
 samp,
 small,
-.nav-bar .nav-bar__links,
-.nav-bar .nav-bar__logo .nav-bar__logo__text,
 .overline,
+.caption,
 strike,
 strong,
 sub,
@@ -138,106 +137,118 @@ table {
 }
 
 /* Font Imports */
-/* Extra small devices (phones, 600px and down) */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-body {
+/* Font Stacks */
+/* Base Font Size */
+html {
   font-size: 16px;
+}
+
+body {
   font-family: Source Sans Pro, Helvetica, sans-serif;
   font-weight: 400;
+  line-height: 1;
   color: #0b0b09cc;
-  margin: 0;
 }
 
+/* Type Scale */
+/* Text Presets */
+/* Breakpoints */
 .container {
-  margin: 0 2rem;
   max-width: 960px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
-
-/* width at which max-width + margin no longer holds all content */
-@media only screen and (max-width: 600px) {
+@media (min-width: 768px) {
   .container {
-    margin: 0 1rem;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 }
-/* width at which max-width + margin no longer holds all content */
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .container {
     margin: 0 auto;
   }
 }
+
 .display-1 {
   font-size: 5.0625rem;
   font-weight: 300;
   line-height: 1.1;
   margin-bottom: 0;
 }
-
-h1,
-h2,
-h3,
-.h1,
-.h2,
-.h3 {
-  font-family: Work Sans, Helvetica, sans-serif;
+@media (min-width: 1024px) {
+  .display-1 {
+    font-size: 5.0625rem;
+  }
 }
 
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4 {
-  margin-bottom: 16px;
+.display-2 {
+  font-size: 3.375rem;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+@media (min-width: 1024px) {
+  .display-2 {
+    font-size: 3.375rem;
+  }
 }
 
 h1,
 .h1 {
-  font-size: 3.375rem;
+  font-size: 2.44140625rem;
+  font-family: Work Sans, Helvetica, sans-serif;
   line-height: 1.1;
   font-weight: 500;
+  margin-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  h1,
+.h1 {
+    font-size: 3.375rem;
+  }
 }
 
 h2,
 .h2 {
-  font-size: 2.25rem;
+  font-size: 1.953125rem;
+  font-family: Work Sans, Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.2;
   text-transform: capitalize;
+  margin-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  h2,
+.h2 {
+    font-size: 2.25rem;
+  }
 }
 
 h3,
 .h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-family: Work Sans, Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.2;
+  margin-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  h3,
+.h3 {
+    font-size: 1.5rem;
+  }
 }
 
 h4,
 .h4 {
-  font-size: 1.1rem;
-  font-weight: 700;
   font-family: Source Sans Pro, Helvetica, sans-serif;
+  font-weight: 700;
   line-height: 1;
+  margin-bottom: 16px;
 }
 
-@media only screen and (max-width: 768px) {
-  h1,
-.h1 {
-    font-size: 2.25rem;
-  }
-
-  h2,
-.h2 {
-    font-size: 1.5rem;
-  }
-}
 p, .p3, .p2, .p1 {
-  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 16px;
 }
@@ -251,17 +262,22 @@ p, .p3, .p2, .p1 {
   font-size: 0.8rem;
 }
 
-small, .nav-bar .nav-bar__links, .nav-bar .nav-bar__logo .nav-bar__logo__text, .overline,
+small, .overline, .caption,
 .small {
-  font-size: 0.667rem;
+  font-size: 0.8rem;
+}
+@media (min-width: 1024px) {
+  small, .overline, .caption,
+.small {
+    font-size: 0.8rem;
+  }
 }
 
 .caption {
-  font-size: 0.8rem;
   color: #4d5a6a;
   line-height: 1.25rem;
-  margin-bottom: 16px;
   margin-top: 8px;
+  margin-bottom: 16px;
 }
 
 .overline {
@@ -349,13 +365,14 @@ section {
   margin-right: 0.5rem;
 }
 .nav-bar .nav-bar__logo .nav-bar__logo__text {
-  font-family: Helvetica, sans-serif;
+  font-size: 0.8rem;
   line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 600;
 }
 .nav-bar .nav-bar__links {
+  font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
   min-width: 200px;
@@ -376,6 +393,7 @@ section {
 .box {
   background-color: #e1e6e9;
   padding: 1.5rem;
+  margin-bottom: 16px;
 }
 
 img.sm {
@@ -390,6 +408,7 @@ img.lg {
   padding: 2rem;
 }
 
+/* Margin */
 .u-margin--0 {
   margin: 0;
 }
