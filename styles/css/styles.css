@@ -255,12 +255,25 @@ p, .p3, .p2, .p1 {
 }
 
 .p1 {
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   font-weight: 600;
 }
 
 .p3 {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
+}
+
+a {
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
+  /* no underline */
+  cursor: pointer;
+}
+
+a:hover {
+  color: purple;
+  text-decoration: underline;
 }
 
 small, .overline, .caption,
@@ -289,13 +302,6 @@ small, .overline, .caption,
 
 section {
   margin-bottom: 32px;
-}
-
-.grid-1-col {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: auto;
-  grid-auto-rows: auto;
 }
 
 .grid-12-col {
@@ -410,7 +416,7 @@ img.lg {
 }
 
 /* Layout */
-.u-margin--0 {
+.u-justify {
   display: flex;
   justify-content: space-between;
 }
