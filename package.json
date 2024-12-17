@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "sass --watch styles/base.scss:styles/css/styles.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.16"
   }
 }
