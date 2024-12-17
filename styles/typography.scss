@@ -1,17 +1,18 @@
 /* Font Imports */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap");
 
 /* Font Stacks */
 $header-font-stack: Work Sans, Helvetica, sans-serif;
-$base-font-stack: Source Sans Pro, Helvetica, sans-serif;
+$base-font-stack: Inter, Helvetica, sans-serif;
 
 /* Available Font Weights */
 // Work Sans - 300, 400, 500, 600, 700
+// Inter - 100 through 900
 // Source Sans Pro - 300, 400, 500, 600, 700
 
 /* Base Font Size */
-$base-font-size: 16px;
+$base-font-size: 18px;
 
 html {
   font-size: $base-font-size;
@@ -21,14 +22,14 @@ body {
   font-family: $base-font-stack;
   font-weight: 400;
   line-height: 1;
-  color: #0b0b09cc;
+  color: $extra-dark-brown;
 }
 
 /* Type Scale */
-$type-scale: 1.5;
+//$type-scale: 1.5; //using mobile 
 
 $type-scale--mobile: 1.25; //Major Third
-$type-scale--desktop: 1.5; //Perfect Fifth
+$type-scale--desktop: 1.4; //Major Fourth
 
 /* Text Presets */
 
@@ -59,7 +60,7 @@ $type-scale--desktop: 1.5; //Perfect Fifth
 }
 
 @mixin t-font-size__mobile--small {
-  font-size: 1 / $type-scale--mobile + rem;
+  font-size: calc(1 / $type-scale--mobile) + rem;
 }
 
 //Desktop
