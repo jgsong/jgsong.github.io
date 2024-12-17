@@ -1,0 +1,45 @@
+Script started on Mon Dec 16 02:12:10 2024
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[Jjames@Lozenge jgsong.github.io % [K[?2004hrrun start[?2004l
+zsh: command not found: run
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[Jjames@Lozenge jgsong.github.io % [K[?2004hnnpm run start[?2004l
+
+> jgsong.github.io@1.0.0 start
+> sass --watch styles/base.scss:styles/css/styles.css
+
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+Sass is watching for changes. Press Ctrl-C to stop.
+
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+[32mCompiled styles/base.scss to styles/css/styles.css.[0m
+^C
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[Jjames@Lozenge jgsong.github.io % [K[?2004hggit push[?2004l
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/jgsong/jgsong.github.io.git/'
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[Jjames@Lozenge jgsong.github.io % [K[?2004h[7mgit remote -v[27m[13D[27mg[27mi[27mt[27m [27mr[27me[27mm[27mo[27mt[27me[27m [27m-[27mv[?2004l
+origin	https://github.com/jgsong/jgsong.github.io.git (fetch)
+origin	https://github.com/jgsong/jgsong.github.io.git (push)
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[Jjames@Lozenge jgsong.github.io % [K[?2004hggit push[?2004l
+Everything up-to-date
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[Jjames@Lozenge jgsong.github.io % [K[?2004hggit push[?2004l
+Everything up-to-date
+[1m[7m%[27m[1m[0m                                                                                                                                      [0m[27m[24m[Jjames@Lozenge jgsong.github.io % [K[?2004hggit  g  
