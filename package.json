@@ -2,7 +2,7 @@
   "name": "jgsong.github.io",
   "version": "1.0.0",
   "scripts": {
-    "start": "sass --watch styles/base.scss:styles/css/styles.css",
+    "sass": "sass --watch styles/base.scss:styles/css/styles.css",
     "tailwind": "npx tailwindcss -i ./css/tailwind-input.css -o ./css/tailwind.css --watch"
   },
   "devDependencies": {
