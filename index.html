@@ -6,8 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="./css/output.css" >
-    <link rel="stylesheet" type="text/css" href="styles/css/styles.css">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./css/tailwind.css" >
+    <!-- Custom Styles -->
+    <!-- <link rel="stylesheet" type="text/css" href="styles/css/styles.css"> -->
 
     <!-- Favicon -->
     <link rel='icon' href='assets/img/favicon.ico' type='image/x-icon' />
@@ -15,9 +17,8 @@
     <title>James Song</title>
 </head>
 
-<body>
-    <div class="container">
-        <div class="nav-bar">
+<body class="flex flex-col px-8 max-w-screen-lg mx-auto">
+        <header class="nav-bar">
             <div class="nav-bar__logo"> 
                 <i class="nav-bar__logo__text" href="../jgsong.github.io/index.html">James Song</i>
             </div>
@@ -26,45 +27,53 @@
                 <a class="u-floatRight u-marginLeft--2">About</a>
             </div>
             <!-- Add hamburger menu -->
-        </div>
-        <grid class="grid-12-col">
-            <section class="col-1-13">
-                <h1 class="text-3xl">I’m James, a UX design consultant.</h1>
-                <p>Portfolio coming soon. Stay tuned.</p>
-                <h1>I co-create digital experiences with clients to solve both customer and business problems.</h1>
-                <p>Portfolio coming soon. Stay tuned.</p>
-            </section>
-            <section class="col-1-13 card">
-                <img class="full-width u-marginBottom--4" src="assets/img/Hero@2x.png"></img>
+        </header>
+        <main>
+            <!-- Hero -->
+            <div id="hero">
+                <div class="flex items-center gap-4">
+                    <img class="w-8" src="../jgsong.github.io/assets/img/gradient-circle-red-orange.svg" alt="avatar">
+                    <h1 class="text-4xl">I’m James, a Product Designer</h1>
+                </div>
+                <h3>I co-create digital experiences with clients to solve both customer and business problems.</h1>
+                    <p>Portfolio coming soon. Stay tuned.</p>    
+            </div>
+            <!-- Work -->
+             <div id="work">
+            <div class="card w-full">
+                <img class="full-width mb-6" src="assets/img/Hero@2x.png"></img>
                 <h3><a href="../jgsong.github.io/case-study-fusiontext.html">Tailoring AI for University TAs (UCI)</h3></a>
                 <p>Conceptual edtech to help Teaching Assistants create tailored materials for their sessions</p>
-            </section>
-            <section class="col-1-13 card">
+            </div>
+            <div class="card w-full">
                 <img class="full-width u-marginBottom--4" src="assets/img/Hero@2x.png"></img>
                 <h3><a href="../jgsong.github.io/case-study-fusiontext.html">Startup for Oral Health</h3></a>
                 <p>At-home, do-it-yourself oral health testing. Utilizing computer vision to scan tests and provide results within minutes</p>
-            </section>
-            <section class="col-1-13 card">
+            </div>
+            <div class="card w-full">
                 <img class="full-width u-marginBottom--4" src="assets/img/Hero@2x.png"></img>
                 <h3><a href="../jgsong.github.io/case-study-fusiontext.html">Liberty Tax Redesiging Marketing Text Platform (Linked)</h3></a>
                 <p>Enable franchisees to text customers to improve prospecting and retention capabilities with younger demographics and provide a safer contact-less communication channel for all customers during the COVID-19 pandemic. </p>
-            </section>
-            <section class="col-1-13 card">
+            </div>
+            <div class="card w-full">
                 <img class="full-width u-marginBottom--4" src="assets/img/Hero@2x.png"></img>
                 <h3><a href="../jgsong.github.io/case-study-home-security.html">BHS Self-Install (Not Linked)</h3></a>
                 <p>Portfolio coming soon. Stay tuned.</p>
-            </section>
-            <section class="col-1-13 card ">
+            </div>
+            <div class="card w-full">
                 <img class="full-width u-marginBottom--4" src="assets/img/Hero@2x.png"></img>
                 <h3><a href="../jgsong.github.io/case-study-bank.html">Bask Bank Onboarding Redesign (Linked)</h3></a>
                 <p>Empower and encourage more customers to install their DIY security system on their own before their activation call</p>
-            </section>
-        </grid>
-    </div>
+            </div>
+            </div>
+        </main>
+    <footer class="flex-none px-8 mt-32">
+        <div class="px-6">
+            <p>Lovingly crafted with Tailwind CSS</p>
+        </div>
+        <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+      </footer>
 </body>
-<footer>
-    <p>Lovingly crafted with Tailwind CSS</p>
-    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
-  </footer>
+
 
 </html>
