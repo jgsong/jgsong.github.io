@@ -9,6 +9,8 @@ module.exports = {
     //   //Overwrite theme colors
     //   transparent: 'transparent',
     //   current: 'currentColor',
+
+    //   //These are examples of aliasing  
     //   black: colors.black,
     //   white: colors.white,
     //   gray: colors.slate,
@@ -16,6 +18,8 @@ module.exports = {
     //   purple: colors.violet,
     //   yellow: colors.amber,
     //   pink: colors.fuchsia,  
+
+    //   //These are examples of custom colors
     //   'blue': '#1fb6ff',
     //   'purple': '#7e5bef',
     //   'pink': '#ff49db',
@@ -37,6 +41,8 @@ module.exports = {
     // },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 }
 
