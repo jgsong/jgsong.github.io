@@ -13,43 +13,57 @@
     <!-- Favicon -->
     <link rel='icon' href='assets/img/favicon.ico' type='image/x-icon' />
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-
-    <title>James Song</title>
+    <title>James Song - Dental</title>
 </head>
 
 <body class="flex flex-col mx-auto h-screen bg-stone-50 max-w-screen-lg">
-
+    <div id="grid-background"
+        class="absolute inset-0 -z-10 h-full w-full bg-stone-50 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
+    </div>
     <header>
         <!-- Navbar -->
-        <nav class="flex w-full justify-between py-6 px-8 bg-white border-x border-b">
-            <a id="logo" class="font-semibold cursor-pointer" href="../index.html">James Song</a>
+        <nav class="flex w-full justify-between bg-stone-100 border-b sm:border-x py-6 px-6 sm:px-16">
+            <a id="logo" class="cursor-pointer font-semibold" href="../index.html">James Song</a>
             <div id="links" class="flex gap-4 items-end">
-                <a class="font-semibold cursor-pointer hover:text-emerald-800" href="">Work</a>
-                <a class="font-semibold cursor-pointer hover:text-emerald-800" href="">About</a>
+                <a class="cursor-pointer hover:text-emerald-800" href="">Work</a>
+                <a class="cursor-pointer hover:text-emerald-800" href="">About</a>
             </div>
         </nav>
         <!-- Add hamburger menu -->
     </header>
 
-    <main class="flex flex-col px-16 py-16 bg-white border-x prose prose-stone max-w-none text-pretty">
-        <div id="grid-background"
-            class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
-        </div>
+    <main
+        class="flex flex-col bg-stone-100 border-x prose prose-stone prose-lg max-w-none text-pretty py-6 px-6 sm:px-16 sm:py-16">
+        <!-- TODO: Add a Go Back | Next Case floating bottom -->
 
         <div id="hero">
-            <h1 class="mb-2">Texting Customers in Real-Time</h1>
-            <img class="rounded-lg" src="../assets/img/dental-tablet@2x.png"></img>
+            <h1 class="mb-4">At-Home Oral Health Testing</h1>
+            <img class="rounded-lg my-4 sm:my-4" src="../assets/img/dental-tablet@2x.png"></img>
         </div>
 
         <div id="overview" class="flex flex-col sm:flex-row sm:gap-8">
-            <div id="left" class="max-w-prose">
-                <p class="text-xl">A dental health startup imagined a world where everyone could have access to oral health</h3>
+            <div id="left" class="max-w-prose prose-blockquote:border-l-emerald-800">
+                <p class="text-xl">Our client envisioned an at-home oral health test to bring accessible and affordable
+                    care to dental deserts and improve awareness to oral-systemic health, how oral health is linked to
+                    diseases such as diabetes and heart disease.</p>
+                <blockquote class="text-xl ">"...nearly 1.7 million people in the US did not have access to dental
+                    clinics within a 30-minute drive, and 24.7 million lived in dental care shortage areas."
+                    <a class="prose-figcaption decoration-dotted underline-offset-2"
+                        href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2828397">
+                        <figcaption>Dental Clinic Deserts in the US: Spatial Accessibility Analysis (2024)</figcaption>
+                    </a>
+                </blockquote>
+                <p class="text-xl">At home, you could take a saliva sample and scan your test card. Computer vision would be able to interpret your results and the app would assess your risk levels and provide tailored recommendations to improve your oral health. Our client needed a prototype to raise funds through investors and </p>
+                <h3>Impact</h3>
+                <p>
+                    We explored a dental provider's experience and designed a process for client employees to review
+                    computer vision's readings of scanned tests.
+                </p>
+
                 <p>I led and created an end-to-end onboarding redesign prototype to define the north star design. I
                     partnered with the product manager, marketing, and customer support team to uncover the root of why
-                    drop-offs were happening and drive design solutions.</p>
+                    drop-offs were happening and drive design solutions. Since test cards were still being physically
+                    prototyped by the manufacturer, we used placeholders in the design.</p>
                 <h3>Impact</h3>
                 <p>After the first set of recommendations hit production, leadership reported a reduction in drop-off
                     rates and a bonus reduction in customer service calls resulting from the changes. We continued to
@@ -57,18 +71,20 @@
                     designs to begin an RFP process to find a vendor that could implement the north star design.
                 </p>
             </div>
-            <div id="right" class="text-nowrap pr-8">
+            <div id="right" class="text-nowrap sm:pr-8">
                 <h4 class="uppercase">Team</h4>
                 <div class="flex items-center gap-1">
                     <span class="">Lead Product Designer</span>
-                    <span class="bg-emerald-800 py-0.5 px-1.5 text-white rounded text-xs font-medium h-fit">My Role</span>
+                    <span
+                        class="bg-emerald-800 py-0.5 px-1.5 text-white rounded text-xs font-semibold tracking-wide h-fit">My
+                        Role</span>
                 </div>
                 <div>Product Designer</div>
                 <div>Technical Architect</div>
                 <div>Developer Lead</div>
                 <div>Developer</div>
                 <h4 class="uppercase">Company</h4>
-                <p>Early-Stage Oral Startup <br>in the vein of 23andMe</p>
+                <p>Early-Stage Startup
                 <h4 class="uppercase">Industry</h4>
                 <p>Healthcare</p>
             </div>
@@ -95,11 +111,12 @@
         </div>
 
         <div id="providers">
-            <h2>Dental Provider Concept</h2>
+            <h2>Dental Provider Patient Health Dashboard Concept</h2>
             <img class="rounded-lg mb-0" src="../assets/img/dental-tablet@2x.png"></img>
-            <figcaption>Dashboard for mobile</figcaption>
-            <p class="">I designed a concept app for providers to see their office's oral health and identify trends in
-                patient health. Once enough patients have taken their tests, they could </p>
+            <figcaption>At-a-glance view of a provider's patient health, test kit inventory, and reminders.</figcaption>
+            <p class="">I designed a concept app for providers to enable our client to explore providers as a channel.
+                They'd be able to view their office's oral health and identify trends in patient health, reorder tests
+                within the app when low.</p>
         </div>
 
         <div id="admins">
