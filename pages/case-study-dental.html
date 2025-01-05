@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="../css/tailwind.css">
+
+    <!-- Favicon -->
+    <link rel='icon' href='assets/img/favicon.ico' type='image/x-icon' />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <title>James Song</title>
+</head>
+
+<body class="flex flex-col mx-auto h-screen bg-stone-50 max-w-screen-lg">
+
+    <header>
+        <!-- Navbar -->
+        <nav class="flex w-full justify-between py-6 px-8 bg-white border-x border-b">
+            <a id="logo" class="font-semibold cursor-pointer" href="../index.html">James Song</a>
+            <div id="links" class="flex gap-4 items-end">
+                <a class="font-semibold cursor-pointer hover:text-emerald-800" href="">Work</a>
+                <a class="font-semibold cursor-pointer hover:text-emerald-800" href="">About</a>
+            </div>
+        </nav>
+        <!-- Add hamburger menu -->
+    </header>
+
+    <main class="flex flex-col px-16 py-16 bg-white border-x prose prose-stone max-w-none text-pretty">
+        <div id="grid-background"
+            class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
+        </div>
+
+        <div id="hero">
+            <h1 class="mb-2">Texting Customers in Real-Time</h1>
+            <img class="rounded-lg" src="../assets/img/dental-tablet@2x.png"></img>
+        </div>
+
+        <div id="overview" class="flex flex-col sm:flex-row sm:gap-8">
+            <div id="left" class="max-w-prose">
+                <p class="text-xl">A dental health startup imagined a world where everyone could have access to oral health</h3>
+                <p>I led and created an end-to-end onboarding redesign prototype to define the north star design. I
+                    partnered with the product manager, marketing, and customer support team to uncover the root of why
+                    drop-offs were happening and drive design solutions.</p>
+                <h3>Impact</h3>
+                <p>After the first set of recommendations hit production, leadership reported a reduction in drop-off
+                    rates and a bonus reduction in customer service calls resulting from the changes. We continued to
+                    add enhancements until the vendor platform could no longer be customized. The client used the
+                    designs to begin an RFP process to find a vendor that could implement the north star design.
+                </p>
+            </div>
+            <div id="right" class="text-nowrap pr-8">
+                <h4 class="uppercase">Team</h4>
+                <div class="flex items-center gap-1">
+                    <span class="">Lead Product Designer</span>
+                    <span class="bg-emerald-800 py-0.5 px-1.5 text-white rounded text-xs font-medium h-fit">My Role</span>
+                </div>
+                <div>Product Designer</div>
+                <div>Technical Architect</div>
+                <div>Developer Lead</div>
+                <div>Developer</div>
+                <h4 class="uppercase">Company</h4>
+                <p>Early-Stage Oral Startup <br>in the vein of 23andMe</p>
+                <h4 class="uppercase">Industry</h4>
+                <p>Healthcare</p>
+            </div>
+
+        </div>
+
+        <div id="patients">
+            <h2>Oral Health Results</h2>
+            <img class="rounded-lg" src="../assets/img/dental-patient-dashboard@2x.png"></img>
+            <h3 class="">Health Education Through Accessible Jargon</h3>
+            <p>We needed to make the dental jargon understandable for a wide audience. The value was helping at-home
+                testers understand not just what we already know, brushing and flossing, but understand other factors,
+                including the effect of acidity. For example, Internally we would use "caries" instead of "cavities" to
+                speak more like dental professionals but jargon would be confusing out of the gate for our users. We
+                wanted them to understand how the test worked so we leveraged progressive disclosure to provide more
+                education once users digested surface level concepts.</p>
+            <h3 class="">Progressive Disclosure</h3>
+            <p>We needed to make the dental jargon understandable for a wide audience. The value was helping at-home
+                testers understand not just what we already know, brushing and flossing, but understand other factors,
+                including the effect of acidity. For example, Internally we would use "caries" instead of "cavities" to
+                speak more like dental professionals but jargon would be confusing out of the gate for our users. We
+                wanted them to understand how the test worked so we leveraged progressive disclosure to provide more
+                education once users digested surface level concepts.</p>
+        </div>
+
+        <div id="providers">
+            <h2>Dental Provider Concept</h2>
+            <img class="rounded-lg mb-0" src="../assets/img/dental-tablet@2x.png"></img>
+            <figcaption>Dashboard for mobile</figcaption>
+            <p class="">I designed a concept app for providers to see their office's oral health and identify trends in
+                patient health. Once enough patients have taken their tests, they could </p>
+        </div>
+
+        <div id="admins">
+            <h2>Training Computer Vision</h2>
+            <img class="rounded-lg" src="../assets/img/dental-admin-review-results.png"></img>
+            <p class="">Because we needed to assess pilot computer vision's ability to accurately read test cards, we
+                created a queue of test results that trained startup employees could review computer vision readings and
+                correct them. Incorrect readings could lead patients and providers to take unnecessary action or
+                downplay the severity of a patient's health.</p>
+            <img class="rounded-lg" src="../assets/img/dental-admin-results.png"></img>
+
+        </div>
+
+        <div id="collaboration">
+            <h2>Updating Material 3 to Brand Colors</h2>
+            <div class="rounded-lg bg-stone-200 align-center">Placeholder for Code</div>
+            <img class="rounded-lg" src="../assets/img/dental-color-scheme@2x.png"></img>
+            <p>I partnered with the Engineering Lead to re-theme a Material 3 front-end UI library, React Native Paper,
+                so that our Figma UI kit and front-end components would align to a single source of truth. I created a
+                color theme .json file.</p>
+            <h2>Saving Client Funds using Free Fonts</h2>
+            <p>The brand guidelines provided by the client specified two paid license fonts, however the client didn't
+                have a license to use them. They'd cost nearly $1000 to acquire. I put together a quick comparison with
+                free Google Fonts alternative that preserved the original intent. These are not huge expenses, but for a
+                startup still seeking funding, every dollar counted.</p>
+        </div>
+    </main>
+
+    <footer class="flex justify-between px-8 py-8 border-t border-x bg-white text-sm">
+        <div id="left" class="">
+            <p>Made by James with Tailwind CSS</p>
+        </div>
+        <div id="right" class="text-stone-500">
+            © 2025
+        </div>
+    </footer>
+</body>
+
+</html>
