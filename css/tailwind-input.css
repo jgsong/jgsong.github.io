@@ -1,3 +1,11 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+/* Work Sans, Inter - delete?
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap"); */
+
 /* Tailwind Imports */
 @tailwind base;
 @tailwind components;
@@ -7,8 +15,8 @@
   /* Defaults */
   h1 {
     @apply text-4xl;
-    @apply font-extrabold;
-    @apply font-serif;
+    @apply font-bold;
+    /* @apply font-display; */
   }
   h2 {
     @apply text-2xl;
@@ -24,27 +32,8 @@
   a {
     @apply cursor-pointer;
   }
-
-  /* Font Imports */
-  @font-face {
-    font-family: '"PT Sans"';
-    src: url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-  }
-  
-  @font-face {
-    font-family: '"DM Serif Text"';
-    src: url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
-  }
-  
-  @font-face {
-    font-family: '"DM Serif Display"';
-    src: url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+  card {
+    @apply bg-stone-50 w-full p-8 rounded-lg border hover:border-stone-400;
   }
 }
 
-
-
-
-/* Work Sans, Inter - delete?
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap"); */
