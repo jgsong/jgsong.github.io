@@ -3,29 +3,48 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-    h1 {
-      @apply text-4xl;
-      @apply font-extrabold;
-    }
-    h2 {
-        @apply text-2xl;
-      }
-    h3 {
-      @apply text-xl;
-      @apply font-bold;
-    }
-    h4 {
-        @apply text-lg;
-        @apply font-bold;
-    }
+  /* Defaults */
+  h1 {
+    @apply text-4xl;
+    @apply font-extrabold;
+    @apply font-serif;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+    @apply font-bold;
+  }
+  h4 {
+    @apply text-lg;
+    @apply font-bold;
+  }
+  a {
+    @apply cursor-pointer;
   }
 
-/* @font-face {
-    font-family: 'font-geist';
-    src: url('/fonts/Geist-UltraLight.woff2') format('woff2');
+  /* Font Imports */
+  @font-face {
+    font-family: '"PT Sans"';
+    src: url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
   }
+  
+  @font-face {
+    font-family: '"DM Serif Text"';
+    src: url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+  }
+  
+  @font-face {
+    font-family: '"DM Serif Display"';
+    src: url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+  }
+}
 
+
+
+
+/* Work Sans, Inter - delete?
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap"); */
