@@ -16,47 +16,58 @@
     <title>James Song</title>
 </head>
 
-<body class="flex flex-col max-w-screen-lg mx-auto h-screen text-stone-800">
+<body class="flex flex-col max-w-screen-lg mx-auto h-full text-stone-800">
+    <div id="grid-background" class="absolute inset-0 -z-10 h-full w-full bg-stone bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
     <header>
         <!-- Navbar -->
-        <nav class="flex w-full justify-between py-6 px-16 border-x border-b">
-            <a id="logo" class="font-semibold cursor-pointer" href="./index.html">James Song</a>
+        <nav class="flex w-full justify-between border-b sm:border-x py-6 px-6 sm:px-16">
+            <a id="logo" class="cursor-pointer font-semibold" href="./index.html">James Song</a>
             <div id="links" class="flex gap-4 items-end">
-                <a class="font-semibold cursor-pointer hover:text-emerald-800" href="">Work</a>
-                <a class="font-semibold cursor-pointer hover:text-emerald-800" href="">About</a>
+                <a class="cursor-pointer hover:text-emerald-800" href="">Work</a>
+                <a class="cursor-pointer hover:text-emerald-800" href="">About</a>
             </div>
         </nav>
         <!-- Add hamburger menu -->
     </header>
 
-    <main class="flex flex-col gap-12 px-16 py-16  border-x">
-        <div id="grid-background" class="absolute inset-0 -z-10 h-full w-full bg-stone bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
-
+    <main class="flex flex-col gap-12 sm:border-x py-6 px-6 sm:px-16 sm:py-16">
+       
         <!-- Hero -->
         <div id="hero">
             <div class="flex flex-col gap-4">
-                <img class="w-8" src="./assets/img/gradient-circle-red-orange.svg" alt="avatar">
-                <h1 class="text-6xl">I'm a Lead Product Designer based in sunny Los Angeles</h1>
-                <p class="text-lg">I co-create digital experiences with clients to solve both customer and business problems.
+                <div class="flex flex-row gap-3">
+                    <img class="w-8" src="./assets/img/gradient-circle-red-orange.svg" alt="avatar">
+                    <img class="w-8 rotate-90" src="./assets/img/gradient-circle-red-orange.svg" alt="avatar">
+
+                <img class="w-8 -rotate-90" src="./assets/img/gradient-circle-red-orange.svg" alt="avatar">
+                <img class="w-8 rotate-180" src="./assets/img/gradient-circle-red-orange.svg" alt="avatar">
+                </div>
+                <h1 class="sm:text-6xl font-display">I'm a Lead Product Designer based in sunny Los Angeles</h1>
+                <p class="text-xl text-stone-600">I co-create digital experiences with clients to solve both customer and business problems. I've been designing for 8+ years for clients ranging from startups to Fortune 200.
                 </p>
+                <div class="flex flex-row justify-between gap-2">
+                    
+                </div>
             </div>
         </div>
         <!-- Work Cards -->
-        <div id="work" class="flex flex-col gap-6 ">
-            <a class="bg-stone-50 w-full p-8 rounded-lg border hover:border-gray-400"
-                href="./pages/case-study-dental.html">
+        <div id="work" class="flex flex-col gap-8">
+            <a class="w-full hover:border-stone-400 rounded-lg sm:p-8 sm:bg-stone-50 sm:flex sm:border sm:flex-row" href="./pages/case-study-dental.html">
+                <img class="grow mb-4 rounded-lg" src="./assets/img/dental-patient-dashboard@2x.png"></img>
+                <div id="description">
+                    <h3 class="text-xl font-bold mb-1">At-Home Oral Health Testing</h3>
+                    <p>Enabling patients to providers, and startup administrators better understand oral health and identify
+                    risks over time</p>
+                </div>
+            </a>
+            <a class="bg-stone-50 w-full p-8 rounded-lg border hover:border-stone-400" href="">
                 <img class="full-width mb-4 rounded-lg" src="./assets/img/placeholder/tap.png"></img>
                 <h3 class="mb-1">Generating Customized Study Materials for University TAs with AI</h3>
                 <p>Conceptual edtech to enable Teaching Assistants create tailored materials for office hours on-the-fly
                 </p>
             </a>
-            <a class="bg-stone-50 w-full p-8 rounded-lg border hover:border-gray-400" href="">
-                <img class="full-width mb-4 rounded-lg" src="./assets/img/dental-tablet@2x.png"></img>
-                <h3 class="text-xl font-bold mb-1">At-Home Dental Health Risk Results in Minutes</h3>
-                <p>Enabling patients to providers, and startup administrators better understand oral health and identify
-                    risks over time</p>
-            </a>
-            <a class="bg-stone-50 w-full p-8 rounded-lg border hover:border-gray-400"
+            <a class="bg-stone-50 w-full p-8 rounded-lg border hover:border-stone-400"
                 href="./pages/case-study-fusiontext.html">
                 <img class="full-width mb-4 rounded-lg" src="./assets/img/marketing-text-platform-hero@2x.png"></img>
                 <h3 class="mb-1">Contactless Marketing Communication Platform</h3>
@@ -65,13 +76,13 @@
                     demographics and provide a safer contact-less communication channel for all customers during the
                     COVID-19 pandemic. </p>
             </a>
-            <a class="bg-stone-50 w-full p-8 rounded-lg border hover:border-gray-400" href="">
+            <a class="bg-stone-50 w-full p-8 rounded-lg border hover:border-stone-400" href="">
                 <img class="full-width mb-4 rounded-lg" src="./assets/img/leading-workshop.JPG"></img>
                 <h3 class="mb-1">Brinks Home Security Self-Install</h3>
                 <p>Enabling patients to providers, and startup administrators better understand oral health and identify
                     risks over time</p>
             </a>
-            <a class="bg-stone-50 w-full p-8 rounded-lg border hover:border-gray-400"
+            <a class="bg-stone-50 w-full p-8 rounded-lg border hover:border-stone-400"
                 href="./pages/case-study-bank.html">
                 <img class="full-width mb-4 rounded-lg" src="./assets/img/onboarding-funnel.png"></img>
                 <h3 class="mb-1">Bask Bank Onboarding Redesign</h3>
@@ -82,7 +93,7 @@
         </div>
     </main>
 
-    <footer class="flex justify-between px-8 py-8 border-t border-x bg-white text-sm">
+    <footer class="flex justify-between px-8 py-8 border-t sm:border-x bg-white text-sm">
         <div id="left" class="">
             <p>Made by James with Tailwind CSS</p>
         </div>
