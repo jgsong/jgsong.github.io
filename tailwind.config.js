@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     './pages/**/*.{html,js}',
@@ -31,14 +34,17 @@ module.exports = {
     //   'gray-light': '#d3dce6',
     // },
     
-    // fontFamily:{
-    //   //Overwrite default font families (sans, serif, display, monospace) 
-    //   //Tip: Use double-quotes ("") for font names that have spaces
-    //   //TODO: Figure out how to import google fonts
-    //   'sans': ['Inter, sans-serif'], 
-    //   'serif': []
-    //   'display': ['"Work Sans", Helvetica, Arial, sans-serif']
-    // },
+    fontFamily: {
+      //Overwrite default font families (sans, serif, display, mono)
+      //Default themes included as backups 
+      //Tip: Use double-quotes ("") for font names that have spaces
+      'sans': ['"PT Sans"', ...defaultTheme.fontFamily.sans], 
+      'serif': ['"DM Serif Text"', ...defaultTheme.fontFamily.serif],
+      //'mono': ['addMonoFontHere', ...defaultTheme.fontFamily.mono],
+      'ptsans': ['"PT Sans"'],
+      'dmserif': ['"DM Serif Text"'],
+      'dmserifdisplay': ['"DM Serif Display"']
+    },
     extend: {},
   },
   plugins: [
