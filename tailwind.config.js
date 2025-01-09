@@ -37,7 +37,7 @@ module.exports = {
       //Overwrite default font families - sans, serif, mono, display (tried, but doesn't seem to work)
       //Default themes included as backups 
       //Tip: Use double-quotes ("") for font names that have spaces
-      'sans': ['"PT Sans"', ...defaultTheme.fontFamily.sans],
+      //'sans': ['"PT Sans"', ...defaultTheme.fontFamily.sans],
       'serif': ['"DM Serif Display"', ...defaultTheme.fontFamily.serif],
       //'mono': ['addMonoFontHere', ...defaultTheme.fontFamily.mono],
     },
@@ -48,6 +48,13 @@ module.exports = {
         'ptsans': '"PT Sans"',
         'dmserif': '"DM Serif Text"',
         'dmserifdisplay': '"DM Serif Display"',
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: '75ch', //default is 65, recommended is 50-75
+          }
+        }
       }
     },
   },
