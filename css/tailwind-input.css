@@ -16,7 +16,7 @@
   h1 {
     @apply text-4xl;
     @apply font-bold;
-    /* @apply font-display; */
+    @apply font-display;
   }
   h2 {
     @apply text-2xl;
