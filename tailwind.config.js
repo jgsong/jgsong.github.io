@@ -38,7 +38,7 @@ module.exports = {
       //Default themes included as backups 
       //Tip: Use double-quotes ("") for font names that have spaces
       //'sans': ['"PT Sans"', ...defaultTheme.fontFamily.sans],
-      'serif': ['"DM Serif Display"', ...defaultTheme.fontFamily.serif],
+      'serif': ['"DM Serif Text"', ...defaultTheme.fontFamily.serif],
       //'mono': ['addMonoFontHere', ...defaultTheme.fontFamily.mono],
     },
     extend: {
