@@ -10,8 +10,8 @@
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="./css/tailwind.css">
 
-    <!-- Phosphor Icons -->
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css"/>
+        <!-- Phosphor Icons -->
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css"/>
 
     <!-- Favicon -->
     <link rel='icon' href='./assets/img/favicon.ico' type='image/x-icon' />
@@ -36,21 +36,22 @@
        
         <!-- Hero -->
         <div id="hero">
-            <div class="flex flex-col gap-4">
-                <img class="w-8" src="./assets/img/gradient-circle-red-orange.svg" alt="avatar">
-                <h1 class="sm:text-6xl font-serif text-balance">I'm a Lead Product Designer based in sunny Los Angeles</h1>
-                <p class="text-xl text-stone-600 sm:w-4/5">I co-create digital experiences with clients to solve both customer and business problems. I've been designing for 8+ years for clients ranging from startups to Fortune 200 firms. Currently working for Pariveda
-                </p>
-                <div class="flex flex-row justify-between gap-2">
-                </div>
-            </div>
+            <svg viewBox="0 0 500 500">
+                <path id="curve" fill="transparent" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+                <text width="500" class="text-2xl">
+                  <textPath alignment-baseline="top" xlink:href="#curve">
+                    Contactless Marketing Communication Platform
+                  </textPath>
+                </text>
+              </svg>
         </div>
 
         <!-- Work Cards -->
+        <!-- Images have to be  -->
         <div id="work" class="flex flex-col gap-8">
             <!-- Dental Startup -->
             <a id="dental" class="card" href="./pages/case-study-dental.html">
-                <img class="object-cover rounded-t-lg aspect-3/2 lg:rounded-none  lg:rounded-l-lg lg:mb-0" src="./assets/img/dental-patient-dashboard@2x.png"></img>
+                <img class="object-cover rounded-t-lg aspect-3/2 lg:rounded-none lg:rounded-l-lg lg:mb-0" src="./assets/img/dental-patient-dashboard@2x.png"></img>
                 <div id="description" class="flex flex-col gap-4 p-8">
                     <h2 class="font-bold">At-Home Oral Health Testing</h2>
                     <p>Enabling patients, providers, and startup administrators better understand oral health and identify
@@ -65,7 +66,7 @@
             </a>
             <!-- AI for TAs -->
             <a id="teachingassistants" class="card" href="">
-                <img class="object-cover aspect-3/2 rounded-t-lg lg:h-80  lg:rounded-none lg:rounded-l-lg lg:mb-0" src="./assets/img/placeholder/tap.png"></img>
+                <img class="object-cover aspect-3/2 rounded-t-lg lg:h-80 lg:rounded-none lg:rounded-l-lg lg:mb-0" src="./assets/img/placeholder/tap.png"></img>
                 <div id="description" class="flex-grow p-8">
                 <h2 class="font-bold mb-2">Generating Customized Study Materials for University TAs with AI</h2>
                 <p>Conceptual edtech to enable Teaching Assistants create tailored materials for office hours on-the-fly
