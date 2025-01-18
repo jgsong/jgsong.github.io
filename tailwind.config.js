@@ -33,19 +33,32 @@ module.exports = {
     //   'gray': '#8492a6',
     //   'gray-light': '#d3dce6',
     // },
-    
     fontFamily: {
-      //Overwrite default font families (sans, serif, display, mono)
+      //Overwrite default font families - sans, serif, mono, display (tried, but doesn't seem to work)
       //Default themes included as backups 
       //Tip: Use double-quotes ("") for font names that have spaces
-      'sans': ['"PT Sans"', ...defaultTheme.fontFamily.sans], 
+      'sans': ['"Libre Franklin"', ...defaultTheme.fontFamily.sans],
       'serif': ['"DM Serif Text"', ...defaultTheme.fontFamily.serif],
       //'mono': ['addMonoFontHere', ...defaultTheme.fontFamily.mono],
-      'ptsans': ['"PT Sans"'],
-      'dmserif': ['"DM Serif Text"'],
-      'dmserifdisplay': ['"DM Serif Display"']
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        //Utility suffixes (eg. font-ptsans)
+        'display': '"DM Serif Display"',
+        'dmserif': '"DM Serif Text"',
+        'dmserifdisplay': '"DM Serif Display"',
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: '75ch', //default is 65, recommended is 50-75
+          }
+        }
+      },
+      aspectRatio: {
+        '3/2': '3 / 2',
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography')
