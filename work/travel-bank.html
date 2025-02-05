@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="../css/tailwind.css">
+
+    <!-- Phosphor Icons -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css"/>
+
+    <!-- Favicon -->
+    <link rel='icon' href='assets/img/favicon.ico' type='image/x-icon' />
+
+    <title>James Song</title>
+</head>
+
+<body
+    class="flex flex-col mx-auto bg-white max-w-screen-lg bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+    <header>
+        <nav class="flex w-full justify-between bg-white border-b sm:border-x py-6 px-6 sm:px-16">
+            <a id="logo"
+                class="cursor-pointer text-lg font-semibold transition-[color] hover:ease-out duration-300 hover:text-[#E45D50]"
+                href="../index.html">James Song</a>
+            <div id="links" class="flex gap-4 items-end">
+                <a class="cursor-pointer hover:text-emerald-800" href="">Work</a>
+                <a class="cursor-pointer hover:text-emerald-800" href="">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <div id="fixedBottomNav" class="flex flex-grow w-full max-w-screen-lg fixed bottom-0 bg-white">
+        <a id="left"
+            class="flex justify-start grow gap-2 border p-4 font-semibold hover:ease-out duration-300 hover:text-[#E45D50] hover:bg-stone-100">
+            <i class="ph-bold ph-arrow-bend-left-up text-lg"></i>
+            Back to Home
+        <a id="right"
+            class="flex justify-end grow gap-2 border p-4 font-semibold hover:ease-out duration-300 hover:text-[#E45D50] hover:bg-stone-100">
+            Next Case Study
+            <i class="ph-bold ph-arrow-right text-lg"></i></a>
+    </div>
+   
+    <main
+        class="flex flex-col bg-white border-x max-w-none prose prose-stone prose-lg text-pretty py-6 px-6 sm:px-16 sm:py-16">
+        <div id="hero">
+            <div class="font-semibold text-sm uppercase text-stone-700 mb-2">Financial Services Bank</div>
+            <h1>Reducing Onboarding Drop-Offs</h1>
+            <img class="rounded-lg my-2 sm:my-4" src="../assets/img/dental-tablet@2x.png">PLACEHOLDER</img>
+            
+        </div>
+
+        <div id="overview" class="flex flex-col sm:flex-row sm:gap-8">
+            <div id="left" class="max-w-prose">
+                <p class="lead">Texas Capital Bank, a regional bank with over $40B in managed assets, launched Bask Bank, a new “digital attacker” bank that provided rewards points instead of interest. While the launch generated significant buzz and interest driving people to explore the website, Bask was losing a large percentage of prospects as they began onboarding and began signing up.</p>
+                
+                <p>I led a data-driven research approach by reviewing user behavior analytics, interviews with customer support agents, competitor analysis, and an end-to-end audit of the existing experience. I designed a future-state onboarding experience based on the research I conducted.</p>
+            
+                <h3>Outcomes</h3>
+                <p>
+                    After the first set of recommendations hit prod, leadership reported a reduction in drop-off rates and a bonus reduction in customer service calls resulting from the changes. We continued to add enhancements until the vendor platform could no longer be customized. The client used the designs to begin an RFP process to find a vendor that could implement the north star design. 
+                </p>
+            </div>
+            <div id="right" class="text-nowrap sm:pr-8">
+                <h4 class="uppercase">Team</h4>
+                <div>Product Owner</div>
+                <div class="flex items-center gap-1">
+                    <span class="">Product Designer</span>
+                    <div class="tag">My
+                        Role</div>
+                </div>
+                <h4 class="uppercase">Year</h4>
+                <p>2019</p>
+                <h4 class="uppercase">Industry</h4>
+                <p>Financial Services</p>
+            </div>
+
+        </div>
+
+        <div id="research" class="max-w-prose">
+            <h2 class="">Drop-Off Drivers</h2>
+            <img class="rounded-lg" src="../assets/img/onboarding-funnel.png"></img>
+            <figcaption>About half of users dropped-off after users clicking "Get Started" from the homepage and seeing the first onboarding screen</figcaption>
+            <p>[add text]</p>
+
+            <h3 class="">A Brand Credibility Problem</h3>
+            <blockquote class="text-xl border-l-emerald-800">"Is this a real bank? I’ve never heard of them before”
+            </blockquote>
+            <p>A Customer Support Lead summarized what they were hearing: "Is this a real bank? I’ve never heard of them before”.
+
+                We could see from the data what was happening but why is this happening? We needed to get to the root before we could create effective solutions. Anything else would be a dart throw in a dark room.
+                The striped bars represent drop-offs from the previous step
+                
+                How might we understand why prospects drop off during onboarding?
+                
+                I wasn’t able to speak to prospective customers directly, however I led a data-driven research approach by reviewing user behavior analytics, interviews with customer support agents, competitor analysis, and an end-to-end audit of the existing experience. </p>
+                
+
+            <h3 class="">Asking for Deposits Before Establishing Trust</h3>
+            <p>[add text]</p>
+
+
+
+        </div>
+        <div id="deposits" class="max-w-prose">
+            <h2 class="">Increasing Initial Deposits</h2>
+            <p>The screen </p>
+    </main>
+
+    <footer class="flex justify-between px-8 py-8 border bg-white text-sm rounded-b-lg mb-8">
+        <div id="left" class="">
+            <p>Made by James with Tailwind CSS</p>
+        </div>
+        <div id="right" class="text-stone-500">
+            © 2025
+        </div>
+    </footer>
+</body>
+
+</html>
