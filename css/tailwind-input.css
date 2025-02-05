@@ -17,7 +17,7 @@
   }
   h2 {
     @apply text-2xl;
-    @apply font-serif;
+    @apply font-semibold;
   }
   h3 {
     @apply text-xl;
@@ -43,7 +43,7 @@
   }
   .tag
   {
-    @apply bg-emerald-800 py-0.5 px-1.5 text-white rounded font-normal text-xs tracking-wider h-fit w-fit
+    @apply bg-emerald-800 py-0.5 px-1.5 text-white rounded font-medium text-xs tracking-wider h-fit w-fit
   }
 }
 
