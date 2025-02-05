@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap');
+
 html,
 body,
 div,
@@ -594,5 +595,3 @@ img.lg {
 .u-marginRight--6 {
   margin-right: 48px;
 }
-
-/*# sourceMappingURL=styles.css.map */
