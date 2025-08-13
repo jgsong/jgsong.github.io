@@ -54,40 +54,38 @@
 
         </div>
         <div id="overview" class="">
-            <p>In 2019 Texas Capital Bank (TCB), a regional bank with over $40B in managed assets, had just
-                launched Bask Bank, a new “digital attacker” bank that offered a travel-oriented savings account that
-                accrued American
-                Airlines
-                miles instead of interest. While the launch was successful driving prospects to the website, they
-                were dropping off at high rates in the onboarding flow and never complete creating their account. And
-                for
-                customers
-                that complete onboarding? Their initial
-                deposits were below target.</p>
-            <p>I heard about these issues during a sprint review and volunteered to help, joining the Product Manager
-                and Technical Lead. I led an effort to research drop-off drivers
-                and redesign onboarding to reduce drop-offs and improve initial deposits. </p>
-            <p>In X months, we won approval of the redesign from leadership and implemented the first wave
-                of enhancements Leadership reported a reduction in drop-off rates and a bonus reduction in customer
-                service calls. I created a metrics dashboard to pinpoint drop-offs step-by-step in onboarding.</p>
+            <p>In 2019 Texas Capital Bank (TCB), a regional bank with over $40B in managed assets, had just launched
+                Bask Bank, a new “digital attacker” bank that offered a travel-oriented savings account that accrued
+                American Airlines miles instead of interest.</p>
+            <p>While the launch was driving prospects to the website, they were dropping off at high rates while
+                onboarding flow. And for customers that complete onboarding? Their initial deposits were below target.I
+                heard about these issues during a sprint review and volunteered to help, joining the Product Manager and
+                Technical Lead.</p>
+            <p>I led an effort to research drop-off drivers and redesign onboarding to reduce drop-offs and improve
+                initial deposits. We had 2 key goals:</p>
+            <ul>
+                <li>How might we reduce onboarding drop-offs?</li>
+                <li>How might we improve average initial deposits?</li>
+            </ul>
+            <p>In X months, we won approval of the redesign from leadership and implemented the first wave of
+                enhancements. Leadership reported a reduction in drop-off rates and a bonus reduction in customer
+                service calls. I also contributed to create a data-driven design culture by creating an onboarding
+                drop-offs dashboard for step-by-step visibility and serve as a source-of-truth for my team and
+                leadership.</p>
         </div>
 
         <div id="research">
             <h2 class="">Uncovering Drop-Off Drivers</h2>
-
-            <p>I couldn't talk to customers directly so I relied on proxies. I interviewed a Customer
-                Support Lead, reviewed call logs, audited the current-state, and analyzed competitors. These were the
-                issues:</p>
+            <p>I couldn't talk to customers directly so we worked with proxies. I interviewed a Customer Support Lead,
+                reviewed call logs, audited the current-state, and analyzed other leading “digital attacker”
+                competitors. We found:</p>
             <ol id="painpoints">
                 <li>
                     <h4 class="">Bask had Little Brand Credibility</h4>
-                    <p>Customers were
-                        interested enough to click to through the site and into onboarding, but Bask didn't have the
-                        same
-                        leash as other digital-first banks. Customers carried doubt in the back of their minds. To make
-                        up for this, Bask needed to
-                        look and feel like it was on the same tier as its competitor digital-native bank such as Chime
-                        and Marcus to appear more credible.
+                    <p>Customers were interested enough to click to through the site and into onboarding, but Bask
+                        didn't have the same leash as other digital-first banks. Customers carried doubt in the back of
+                        their minds. To make up for this, Bask needed to look and feel like it was on the same tier as
+                        its competitor digital-native bank such as Chime and Marcus to appear more credible.
                     </p>
                     <blockquote class="text-xl border-l-emerald-800">"Is this a real bank? I’ve never heard of them
                         before”
@@ -97,17 +95,15 @@
                 <li>
                     <h4 class="">Jarring Transition Between Website and Onboarding</h4>
                     <p>The website was modern and polished, but onboarding had a completely different, outdated
-                        experience. It felt like being taken to a dingy backroom to finish the deal after being taken
-                        through a nice showroom.</p>
+                        experience. It felt like being taken to a dingy backroom to finish account creation after seeing
+                        a nice showroom.</p>
                 </li>
                 <li>
                     <h4 class="">Asking for Deposits Too Soon</h4>
-                    <p>Onboarding needs to be efficient, but the current-state tried to move too quickly. The existing
-                        flow asked prospects to commit to an initial deposit early in the flow, before login
-                        credentials and before a funding bank was set. The thinking was that Bask needed to
-                        capture the deposit as soon as possible and move through the process as fast as possible, but
-                        even asking for this number didn't mean that the
-                        transfer could even happen right then. More steps needed to happen.
+                    <p>The current-state tried to move too fast. It asked users to commit to an initial deposit too
+                        early in the flow, before login credentials and before a funding bank was set. The thought
+                        process was that Bask needed to capture the deposit as soon as possible, but this spooked
+                        customers who needed more time to get comfortable.
                     </p>
                 </li>
 
@@ -119,15 +115,17 @@
 
         <div id="redesign">
             <h2 class="">Building User Trust to Reduce Drop-Offs</h2>
-            <p>I hypothesized that the following changes would help prospects overcome their skepticism and complete
-                account creation. For deposits, the more trust built, the more users would feel depositing at the start.
+            <p>I designed a rework of onboarding to help customers feel more comfortable and reduce drop-offs. And for
+                deposits, the more trust built, the more users would feel depositing at the start. To facilitate
+                conversations with engineering team, I redesigned the onboarding process end-to-end to create a north
+                star:
             </p>
-            <h3>Demonstrate Value before Asking for Commitment</h3>
-            <p>Since users would be interacting with Bask for the first time I reframed onboarding as an opportunity to
-                build rapport and ease users in by making small asks first to get them get comfortable and see that
-                onboarding was
-                similar to other banks they might be familiar with, and that we would guide them through key steps
-                needed for them to earn their miles, the reason they're here.
+            <h3>Ease Users In Rather Than Ask for Deposits Upfront</h3>
+            <p>Onboarding should build rapport and ease users in by making small asks first to get users comfortable.
+                Asking for a big commitment, a deposit, was scaring some users away. I moved the initial deposit later
+                in the flow, right after they connected their funding bank. In addition, I added a step to collect the
+                user's frequent flier # so that we could remind them of the value they could get and ensure they would
+                receive their rewards.
             </p>
             <p>We hypothesized that since
                 users are already wary, asking for a big commitment could scare them away. I moved the initial
@@ -136,63 +134,48 @@
                 user's frequent flier # to lean on partner credibility and reduce the likelihood they forget to connect
                 their account later and be unable to receive their miles.</p>
             <h3>On Brand Onboarding</h3>
-            <p>The home page and onboarding felt like two completely different companies made them. Which was true, two
-                vendors were responsible. However, customers needed to see both as one unified experience. Onboarding
-                needed to
-                share the same visual language as the website to avoid spooking customers. Some of its competitors could
-                get by with a brand name bank's backing, but Bask only had its product offering and design.</p>
+            <p>The home page and onboarding felt like two completely different companies created them. We needed to make
+                the Bask experience feel as one single entity. I created components to match the visual language of the
+                website and used those to redesign Onboarding to keep consistent between the two.</p>
             <h3>Transparency </h3>
-            <p>Explain Data Collection - Onboarding has quite a few fields to fill in so I added description copy to
-                explain why the data Bask
-                asks is necessary and helps users in the future. Users could </p>
-            <p>Progress Tracker - this would give users a better idea of what to expect and brakes down onboarding into
-                a digestible process.</p>
+            <p>Users needed to fill in a larger number of fields to complete onboarding, including a set of Know Your
+                Customer questions. To fight field fatigue and data privacy concerns, I added a short explainer on each
+                step to explain why and how the information would be used and a progress tracker to break down the
+                process into smaller milestones.</p>
         </div>
 
         <div id="deposits">
             <h2 class="">Increasing Initial Deposits</h2>
             <p>New customers could earn a hefty bonus for maintaining over certain balances. While the rewards tiers
-                were mentioned on the website, users had to remember the reward tiers in the previous experience. </p>
+                were mentioned on the website, users had to remember the reward tiers in the previous experience.</p>
             <p>I saw an opportunity for a win-win. I designed a new initial deposit screen that re-surfaced deposit and
-                reward tiers to nudge users toward higher initial deposits, and have one
-                less reason to go back to
-                the website (and potentially drop-off!).</p>
+                reward tiers to nudge users toward higher initial deposits, and have one less reason to go back to the
+                website (and potentially drop-off!).</p>
             <figure>
                 <img class="rounded-lg" src="../../assets/img/travel-bank-initial-deposit.png">
             </figure>
         </div>
-        <h2>Outcomes</h2>
-        <p>The engineering team implemented the
-            enhancements in waves.
-            After the first set hit prod, leadership reported a reduction in drop-off rates and a
-            bonus reduction in customer service calls.</p>
-        <p>We continued to add enhancements
-            until the vendor platform could no longer be customized. The client used the designs to inform a RFP to
-            find a vendor that could implement the proposed redesign.</p>
+
         <h2>Growing Data-Driven Design</h2>
-        <p>After seeing drop-offs fall, the client wanted to continue tying feature development to business metrics.</p>
-        <h3>Quantitiative</h3>
-        <p>Bask could track overall
-            drop-offs but didn't have visibility into drop-offs at each step so I created a
-            funnel
-            chart in Amplitude, a product analytics platform, to track progress within onboarding and provide a
-            senior leadership and the onboarding team with a source-of-truth.</p>
-        <p></p>
+        <p>I partnered with engineering to implement the first wave of features to build towards the north star I
+            designed. In the first release, we the visual update and reordered onboarding steps. Leadership saw
+            drop-offs fall and encouraged us to continue building a more data-driven approach to drive product
+            decisions.</p>
+        <h3>Building Quantitative and Qualitative Capabilities</h3>
+        <p>Bask could see how many entered onboarding and how many accounts were created, but didn't have visibility
+            into drop-offs at each step in onboarding. I created a funnel chart to track progress within onboarding so
+            my team and leadership could also track drop-offs at a step-by-step level to understand where users were
+            dropping off the most - where we might make the biggest impact. I shared this with Bask leadership as well
+            so they would have the same source-of-truth as my team would.</p>
         <figure>
             <img class="rounded-lg" src="../../assets/img/onboarding-funnel.png">
-            <figcaption>The striped bars represent the users that didn't move on to the next step.</figcaption>
+            <figcaption>The diagonal striped bar represents the number of users that dropped-off in the previous step.
+                Almost half of users dropped off at the first step - our biggest opportunity to tackle next.
+            </figcaption>
         </figure>
-        <p>Our biggest opportunity was right at the start. After users saw
-            the first onboarding screen, over half would leave.</p>
-
-        <h3>Qualitative - User Testing</h3>
-        <p>To gather more qualititative insights we brought on the UserTesting.com platform and ran tests on future
-            features.</p>
-        <div id="aftermath" class="">
-            <h2 class="">COVID-19 Reduces Travel Demand</h2>
-
-            <p>Once the COVID-19 pandemic began, demand for travel dipped and interest in the product dipped.
-                Unfortunately the full onboarding vision was never fully built out.</p>
+        <p>To grow their qualitative capabilities, I researched remote testing platforms and recommended
+            UserTesting.com, which the client licensed. I identified key questions and designed tests to validate new
+            Bask features before launch.</p>
         </div>
 
     </main>

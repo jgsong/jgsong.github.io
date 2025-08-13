@@ -10,7 +10,7 @@
 @config '../tailwind.config.js';
 
 @utility card {
-  @apply lg:w-full lg:h-80 rounded-lg border border-stone-600 bg-stone-50 lg:flex lg:flex-row transition hover:ease-out duration-300 hover:border-[#E45D50] hover:-translate-y-1 hover:scale-[1.025];
+  @apply lg:w-full lg:h-80 rounded-lg bg-stone-50 lg:flex lg:flex-row transition hover:ease-out duration-300 hover:border-[#E45D50] hover:-translate-y-1 hover:scale-[1.025];
 }
 
 @utility tag {
