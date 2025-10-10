@@ -48,7 +48,7 @@
         class="flex flex-col bg-white border-x max-w-prose prose prose-stone prose-lg text-pretty py-6 px-6 sm:px-16 sm:py-16">
         <div id="hero">
             <div class="font-semibold text-sm uppercase text-stone-700 mb-2">Healthcare Startup</div>
-            <h1>At-Home Oral Health Testing</h1>
+            <h1 class="not-prose">At-Home Oral Health Testing</h1>
             <img class="rounded-lg my-2 sm:my-4" src="../../assets/img/dental-tablet@2x.png"></img>
         </div>
 
@@ -61,55 +61,64 @@
                     <figcaption>Dental Clinic Deserts in the US: Spatial Accessibility Analysis (2024)</figcaption>
                 </a>
             </blockquote>
-            <p>In 2024, our client envisioned an at-home oral health test to bring accessible and affordable care to
-                dental deserts. Test takers would prepare their own salive sample and scan their test card with their
-                phone leveraging computer vision
-                to receive an assessment
-                of their dental health and customized advice. The client needed a prototype of the experience to test
-                the efficacy of the test card
-                and raise funding.
+            <p>Our client wanted to improve dental care access in dental deserts by developing an oral health test
+                kit that people at home could take on their own. They'd provide a saliva sample and then scan a test
+                card using computer vision to get a personalized assessement of their oral health and tailored advice in
+                less than an hour, significantly reducing barriers to dental care.
             </p>
             <p>
-                Over 6 months, I led design on the end-to-end mobile app experience for test takers to guide them
-                through test taking,
-                an employee web app to review and correct computer vision’s readings of test cards scans to improve
-                accuracy.
-                I scoped work, ideated on design and facilitated client design reviews, managed and coached a college
-                hire junior designer, and partnered with a medical copywriter and the dev team to handoff and provide UX
-                QA.
+                Over 6 months, I led design for a mobile app to guide test takers at home to complete their test and
+                view their results, an employee web app to manually review and correct computer vision readings of test
+                cards scans to train the model, and a concept tablet app for providers to uncover dental trends across
+                their office and manage test kit inventory.
             </p>
-            <p>My team included a fractional product strategist and a technical college hire who I managed and coached
-                to play a product designer role. I partnered with engineering to validate feasibility, handoff features,
-                and provide UX QA.</p>
-            <h3>Our goal was to secure funding by:</h3>
+            <p> My team included a fractional product strategist and a technical college hire who I managed and coached
+                to fill a product designer role. I worked cross-functionally, facilitating design reviews with the
+                founders, refining copy with the medical copywriter, and partnered with the
+                development team to validate feasibility, handoff
+                features, and conduct UX QA.</p>
+            <h3>Goals:</h3>
             <ul>
-                <li>Creating an a working prototype of the test card experience to pilot and prove out the end-to-end
-                    experience</li>
-                <li>Design a feedback loop to train computer vision with real-world tests</li>
+                <li>Create a working prototype of the end-to-end test card experience mobile app experience to conduct a
+                    pilot testing the
+                    efficacy of computer vision.</li>
+                <li>Design a process and web app to allow employees to review computer vision scans and improve computer
+                    vision</li>
+                <li>Explore the value add of the test kit to providers as a sales channel</li>
             </ul>
-            <p>The design effort ended before the pilot was conducted but the client won hundreds of thousands in
+            <p>The design effort ended before the pilot was conducted but the client raised hundreds of thousands in
                 funding from investors ahead of the pilot demoing mockups I created to investors.</p>
         </div>
 
         </div>
 
         <div id="test">
-            <h2 class="">DIY Testing</h2>
+            <h2 class="">Simple Do-It-Yourself Testing</h2>
             <p>
-                The test was meant to be taken at home so it needed to be easy enough to administer without a dental
-                professional present. I reviewed existing healthcare and wellness experiences to understand common
-                patterns and what users might already be familiar with. Ultimately, we modeled the process after
-                scannable COVID-19 tests since we expected most users to have some familiarity with that experience and
-                could map that onto ours.
+                We designed a mobile app to guide test takers through prepping their saliva sample and taking a quality
+                scan of their test card to
+                get their results. We couldn't expect a dental professional to assist so we started with research into
+                DIY tests in the wellness and healthcare space. We
+                drew heavily from COVID-19 tests since many users would already be familiar with them.
             </p>
             <figure>
                 <img class="rounded-lg" src="../../assets/img/dental-admin-review-results.png"></img>
-                <figcaption>The test kit manufacturing was still being developed at this time so we stubbed out the
-                    rough process with what we knew was required and filled in details as they became available.
+                <figcaption>We designed a high-level process for test taking since the physical test cards were still
+                    being finalized.
                 </figcaption>
             </figure>
-            <p>The test kit manufacturing was still being developed at this time so we stubbed out the rough process
-                with what we knew was required and filled in details as they became available.</p>
+            <h3>Test Scanning</h3>
+            <img class="rounded-lg" src="../../assets/img/dental-patient-scanning.png"></img>
+            <figcaption>Real-time guidance helps users take a quality scan
+            </figcaption>
+            <p>
+                Computer vision needed a quality scan to accurately read and interpret test card results. Lighting,
+                exposure, contrast, or positioning could all make a scan difficult to read so we designed an initial
+                version to give some guardrails and feedback to let users know if they were scanning correctly. We
+                didn't want to
+                overdesign this first version and planned to use observations from the pilot to better
+                understand how users would behave.
+            </p>
         </div>
         <div id="advice">
             <h2 class="">Actionable Advice</h2>
