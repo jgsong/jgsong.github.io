@@ -49,93 +49,94 @@
     <main class="flex flex-col bg-white border-x prose prose-stone prose-lg text-pretty py-6 px-6 sm:px-16 sm:py-16">
         <div id="hero">
             <div class="font-semibold text-sm uppercase text-stone-700 mb-2">Financial Services</div>
-            <h1>Contactless 2-Way Texting for a COVID-19 World</h1>
+            <h1 class="not-prose">Contactless 2-Way Texting for a COVID-19 World</h1>
             <img class="rounded-lg my-2 sm:my-4" src="../../assets/img/marketing-text-platform-hero@2x.png">
 
         </div>
         <div id="overview" class="">
-            <p>My client was a tax prep firm with 1.5 million+ customers across 2,500+ locations. During tax season,
-                franchisees would drive customers to visit their local brick & mortar
-                location to complete a sale. However, when the COVID-19 pandemic started, their business as usual wasn't
-                going to work
-                safely anymore so they
-                began investing in enhancing their in-house marketing texting platform, FusionText, and add 2-Way
-                Texting.
+            <p>I led design for a major feature update for FusionText, the SMS marketing platform of a large
+                tax prep firm with over 2,500+ locations nationwide. They relied on bringing customers in-store to
+                complete purchases and provide tax prep advisory, but when the COVID-19 pandemic began they changed
+                course and invested in upgrading FusionText to give their franchisees better high touch contactless
+                channel to engage and retain customers come tax season.
             </p>
             <p>
-                Franchisees could use FusionText to send scheduled or automated messages, and 2-Way Texting would allow
-                them to see replies and have full conversations with customers.
+                Over 3 months I ran research,
+                scoped and designed the annual update, which included a visual overhaul, dashboard, and
+                2-Way Texting, the flagship
+                feature.
+                While franchisees could already use FusionText to send marketing texts, 2-Way Texting would allow
+                them to have full conversations with the 600k recipients opted-in to receive messages. They'd be able to
+                maintain existing customer relationships and grow new ones in a contactless world.
             </p>
-            <p>I led design on 2-Way Texting, where over 2 months, I conducted research,
-                created and prioritized a backlog of features for
-                2-way texting, and
-                designed the feature set for Phase 1. This enabled franchisees to
-                create deeper
-                customer relationships with the over 600k recipients opted-in to receive messages.</p>
-            <p>My team included a Technical
-                Architect and I collaborated closely with a working group of Marketing, Engineering, and Franchisee
-                stakeholders to prioritize features and gather design feedback.</p>
+            <p>I partnered with a Technical
+                Architect and a cross-functional group of client stakeholders in Marketing, Engineering, and Franchise
+                owners to prioritize features and solicit design feedback.</p>
+            <p></p>
         </div>
 
-        <div id="research">
-            <h2 class="">Learning from Franchisees With 2-Way Texting</h2>
-            <p>The working group provided business, user and technical insights and they shared that some
-                franchisees had already implemented 2-way texting on their own. I interviewed a few of these pioneers to
-                understand potential issues to avoid and successes we could replicate with our design.
+        <div id="2waytexting">
+            <h2 class="">2-Way Texting</h2>
+            <p>I was fortunate enough to interview a few pioneering franchise owners who had already implemented 2-Way
+                Texting. I interviewed a few of these pioneers to understand potential pitfalls to get ahead of and
+                successes to replicate.
             </p>
-            <ul id="painpoints">
-                <li>
-                    <h4 class="">How might we set expectations on availability with customers?</h4>
-                    <p>Customers expected faster replies compared to calls and emails, which put more strain on
-                        employees, especially for locations with fewer staff. Employees stretched too thin could perform
-                        worse in their other responsibilities.</p>
-                    <p>
-                        In their personal lives, customers might expect their friends and family to respond at all hours
-                        so franchisees needed to communicate availability with customers and handle after-hours messages
-                        clearly.
-                    </p>
-                </li>
-                <li>
-                    <h4 class="">How might we help franchisees sound like a real human being and less like a corporate
-                        entity?
-                    </h4>
-                    <p>Texting was a great way for franchisees to connect with younger customers and pioneering 2-Way
-                        Texting franchisees found that having non-verbals - emojis, images, gifs etc helped build
-                        rapport and convert customers.
-                    </p>
-                </li>
-                <li>
-                    <h4 class="">How might we minimize potential for abuse?
-                    </h4>
-                    <p>Texting could
-                        be used to harass employees. Franchisees would sometimes receive inappropriate messages or have
-                        upset customers.
-                    </p>
-                </li>
-                <li>
-                    <h4 class="">How might we setup 2-Way Texting so that it could be easily adapted to in-person kiosks
-                        in the
-                        future?
-                    </h4>
-                    <p>The client envisioned an in-person experience where customers could come into franchisee
-                        locations and interact with employees through a kiosk to recapture a
-                    </p>
-                </li>
-                <li>
-                    <h4 class="">The design must use the Material UI (MUI) component library
-                    </h4>
-                    <p>The dev team was already using MUI for the current web app and their devs were already familiar
-                        with it. Designing with this framework and its availabile components and utilties would optimize
-                        dev velocity.
-                    </p>
-                </li>
-            </ul>
-            <p>The </p>
+            <figure>
+                <img class="rounded-lg" src="../../assets/img/fusiontext-2waytexting.png"></img>
+            </figure>
+            <h3>Sounding Like a Real Person</h3>
+            <p>And less like a corporate entity. This was the biggest factor in developing strong customer
+                relationships, especially connecting with younger
+                customers. Pioneering franchisees pressed that having richer non-verbals - emojis, images, and gifs
+                helped build rapport and convert customers. I invited a franchisee owner to one of our
+                prioritization sessions to help make the case and the client agreed on moving it up in the roadmap.
+            </p>
+
+            <h3>Employee Safety</h3>
+            <p>Franchisees were worried about upset customers using 2-Way Texting to harass or send inappropriate
+                employees. Horror stories were unfortunately common, and the stress of tax season compounds the issue. I
+                included a feature to block numbers so that employees could protect themselves from customers who might
+                abuse 2-Way Texting.
+            </p>
+
+            <h3>Automatic Replies</h3>
+            <figure>
+                <img class="rounded-lg" src="../../assets/img/fusiontext-automatic-replies.png"></img>
+            </figure>
+
+            <p>
+                Franchisees didn't have the staff to handle messages 24/7 so they needed a way to handle after-hours
+                messages
+                and let customers know when they'll be active next. Store hours varied wildly so I designed Automatic
+                Replies to give users as much flexibility over the time frame and message. There wasn't a
+                one-size-fits-all message for all 2500+ locations.
+            </p>
 
         </div>
 
-        </div>
+        <div id="dashboard">
+            <h2 class="">Dashboard Visual Update</h2>
+            <p>One of the top customer requests was for more metrics and insight into how their text marketing
+                campaigns performed. I reworked the dashboard to provide at-a-glance metrics and brought in more of the
+                brand palette.
+            </p>
+            <h4>Before</h4>
+            <figure>
+                <img class="rounded-lg" src="../../assets/img/fusiontext-visual-update-before.png"></img>
+                <!-- <figcaption>Before</figcaption> -->
+            </figure>
+            <h4>After</h4>
+            <figure>
+                <img class="rounded-lg" src="../../assets/img/fusiontext-visual-update-after.png"></img>
+                <!-- <figcaption>After</figcaption> -->
+            </figure>
 
+            <p>I collaborated with engineering and spent some time with MUI documentation to identify
+                efficient ways to use the grid utilities and color system
+                to understand what would be supported to incorporate more of the brand palette into FusionText without
+                introducing too much complexity.
+            </p>
+        </div>
     </main>
 
     <footer class="flex justify-between px-8 py-8 border bg-white text-sm mb-12">

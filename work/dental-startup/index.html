@@ -48,11 +48,11 @@
         class="flex flex-col bg-white border-x max-w-prose prose prose-stone prose-lg text-pretty py-6 px-6 sm:px-16 sm:py-16">
         <div id="hero">
             <div class="font-semibold text-sm uppercase text-stone-700 mb-2">Healthcare Startup</div>
-            <h1 class="not-prose">At-Home Oral Health Testing</h1>
-            <img class="rounded-lg my-2 sm:my-4" src="../../assets/img/dental-tablet@2x.png"></img>
+            <h1 class="not-prose mb-8">At-Home Oral Health Testing</h1>
+            <img class="rounded-lg" src="../../assets/img/dental-tablet@2x.png"></img>
         </div>
 
-        <div id="overview" class="">
+        <div id="overview">
             <blockquote class="text-l border-l-emerald-800">"...nearly 1.7 million people in the US did not have
                 access to dental
                 clinics within a 30-minute drive, and 24.7 million lived in dental care shortage areas."
@@ -72,8 +72,8 @@
                 cards scans to train the model, and a concept tablet app for providers to uncover dental trends across
                 their office and manage test kit inventory.
             </p>
-            <p> My team included a fractional product strategist and a technical college hire who I managed and coached
-                to fill a product designer role. I worked cross-functionally, facilitating design reviews with the
+            <p>My team included a junior product designer. I worked cross-functionally, facilitating design reviews
+                with the
                 founders, refining copy with the medical copywriter, and partnered with the
                 development team to validate feasibility, handoff
                 features, and conduct UX QA.</p>
@@ -95,29 +95,26 @@
         <div id="test">
             <h2 class="">Simple Do-It-Yourself Testing</h2>
             <p>
-                We designed a mobile app to guide test takers through prepping their saliva sample and taking a quality
-                scan of their test card to
-                get their results. We couldn't expect a dental professional to assist so we started with research into
-                DIY tests in the wellness and healthcare space. We
-                drew heavily from COVID-19 tests since many users would already be familiar with them.
+                I collaborated with the client to design a test taking process and the mobile app to
+                guide users from prepping their saliva sample to taking a
+                quality
+                scan of their test card and finally
+                getting their oral health report. Since we couldn't expect dental professionals to be present, we made
+                sure to add guardrails and use plain language to prevent errors. COVID-19
+                tests were a major
+                inspiration for the process since we could expect users to be familiar with taking one
+                and have a mental model of how to take a test at home.
             </p>
-            <figure>
-                <img class="rounded-lg" src="../../assets/img/dental-admin-review-results.png"></img>
-                <figcaption>We designed a high-level process for test taking since the physical test cards were still
-                    being finalized.
-                </figcaption>
-            </figure>
             <h3>Test Scanning</h3>
             <img class="rounded-lg" src="../../assets/img/dental-patient-scanning.png"></img>
             <figcaption>Real-time guidance helps users take a quality scan
             </figcaption>
             <p>
                 Computer vision needed a quality scan to accurately read and interpret test card results. Lighting,
-                exposure, contrast, or positioning could all make a scan difficult to read so we designed an initial
-                version to give some guardrails and feedback to let users know if they were scanning correctly. We
-                didn't want to
-                overdesign this first version and planned to use observations from the pilot to better
-                understand how users would behave.
+                exposure, contrast, or positioning could all make a scan difficult to read so we designed real-time
+                feedback to let users know if they were scanning correctly. The engineering team had a large backlog to
+                work through so we decided on addressing positioning first and planned to use the pilot to learn what
+                mistakes users might make rather than overengineer the guardrails.
             </p>
         </div>
         <div id="advice">
@@ -137,9 +134,12 @@
             <img class="rounded-lg mb-0" src="../../assets/img/dental-tablet@2x.png"></img>
             <figcaption>Caption goes here
             </figcaption>
-            <p>We wanted to explore dental providers as potential market, where dentists could provide tests in a clinic
-                setting so I designed a tablet dashboard concept to help communicate the value of understanding risk
-                levels across patients at a clinic and easily restock tests when low.
+            <p>The client wanted to explore dental providers as a potential market. I saw an opportunity for dentists
+                to use aggregated patient risk data across their clinic and identify trends to improve their approach to
+                care. I designed a
+                tablet dashboard concept visualizing risk levels across patients and included a few quality of life
+                features to streamline test kit inventory management and remind when patients would need to take another
+                test.
             </p>
         </div>
 
@@ -147,11 +147,11 @@
             <h2>Training Computer Vision</h2>
             <figure>
                 <img class="rounded-lg" src="../../assets/img/dental-admin-review-results.png"></img>
-                <figcaption>Startup employees would manually review completed tests and correct any Computer Vision
+                <figcaption>Employees would manually review completed tests and correct any Computer Vision
                     mistakes.
                 </figcaption>
             </figure>
-            <p>We were concerned about computer vision’s ability to accurately read test cards so I designed an admin
+            <p>Computer vision needed to be trained to read test cards accurately so I designed a feedback loop and
                 web app for employees to review a queue of completed tests and make corrections to computer vision’s
                 readings. This feedback would be used to train computer vision and also allow reviewers to identify
                 issues with scan quality during the pilot.</p>
@@ -161,30 +161,9 @@
 
         </div>
         <div id="next">
-            <h2>Defining Pilot Success</h2>
-            <p>Our engagement ended before the pilot began but if we had more time I would have defined success metrics
-                with the client:</p>
-            <ul>
-                <li>What scan accuracy rate would we need to reach before we could consider the pilot a success? </li>
-                <li>What guidance might we provide users when scanning their card to improve scan quality?</li>
-            </ul>
-        </div>
-
-        <div id="collaboration">
-            <h2>Update Material 3 to Brand Colors</h2>
-            <div class="rounded-lg bg-stone-200 grid place-content-center h-24">Placeholder for Code</div>
-            <img class="rounded-lg" src="../../assets/img/dental-color-scheme@2x.png"></img>
-            <p>I partnered with the Engineering Lead to re-theme a Material 3 front-end UI library, React Native Paper,
-                so that our Figma UI kit and front-end components would align to a single source of truth. I created
-                color scales and chose appropriate colors for each of Material's semantic colors. To ease handoff to
-                engineering, I mapped the color theme into a .json file with brand-aligned the could copy and paste into
-                their theme.</p>
-
-            <h2>Saving Client Funds using Free Fonts</h2>
-            <p>The brand guidelines provided by the client specified two paid license fonts, however the client didn't
-                have a license to use them. They'd cost nearly $1000 to acquire. I put together a quick comparison with
-                free Google Fonts alternative that preserved the original intent. These are not huge expenses, but for a
-                startup still seeking funding, every dollar counted.</p>
+            <h2>Outcomes</h2>
+            <p>The design team wrapped up work before the pilot began but the designs created were instrumental in
+                helping the client win grants from major dental associations.</p>
         </div>
     </main>
 
@@ -192,7 +171,7 @@
         <div id="left" class="">
             <p>Made by James with Tailwind CSS</p>
         </div>
-        <div id="right" class="text-stone-500">
+        <div id="right">
             © 2025
         </div>
     </footer>
