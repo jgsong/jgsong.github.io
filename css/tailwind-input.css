@@ -1,42 +1,44 @@
 /* Font Imports */
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap') layer(base);
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap') layer(base);
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap') layer(base);
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap') layer(base);
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap")
+layer(base);
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap")
+layer(base);
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap")
+layer(base);
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap")
+layer(base);
 
 /* Tailwind Imports */
-@import 'tailwindcss';
-
+@import "tailwindcss";
 @config '../tailwind.config.js';
 
 @utility card {
-  @apply lg:w-full lg:h-80 rounded-lg border border-stone-600 bg-stone-50 lg:flex lg:flex-row transition hover:ease-out duration-300 hover:border-[#E45D50] hover:-translate-y-1 hover:scale-[1.025];
+  @apply rounded-2xl border-stone-200 border-1 bg-stone-50 transition hover:ease-out duration-300 hover:border-[#E45D50] hover:-translate-y-1 hover:scale-[1.025];
 }
 
 @utility tag {
-  @apply bg-emerald-800 py-0.5 px-1.5 text-white rounded-sm font-medium text-xs tracking-wider h-fit w-fit;
+  @apply bg-amber-900 py-1 px-1.5 text-stone-200 rounded-md font-medium text-sm tracking-wide h-fit w-fit;
 }
 
 @layer base {
-
   /* Defaults */
   h1 {
     @apply text-4xl;
-    @apply font-display;
+    @apply font-semibold;
   }
 
   h2 {
-    @apply text-2xl;
+    @apply text-xl;
     @apply font-semibold;
   }
 
   h3 {
-    @apply text-xl;
+    @apply text-lg;
     @apply font-bold;
   }
 
   h4 {
-    @apply text-lg;
+    @apply text-base;
     @apply font-bold;
   }
 

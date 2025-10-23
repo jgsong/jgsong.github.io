@@ -20,7 +20,7 @@
 </head>
 
 <body
-    class="flex flex-col mx-auto bg-white max-w-(--breakpoint-lg) bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+    class="flex flex-col mx-auto bg-white max-w-prose bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
     <header>
         <nav class="flex w-full justify-between bg-white border-b sm:border-x py-6 px-6 sm:px-16">
             <a id="logo"
@@ -33,7 +33,7 @@
         </nav>
     </header>
 
-    <div id="fixedBottomNav" class="flex grow w-full max-w-(--breakpoint-lg) fixed bottom-0 bg-white">
+    <div id="fixedBottomNav" class="flex grow w-full max-w-prose fixed bottom-0 bg-white">
         <a id="left"
             class="flex justify-start grow gap-2 border p-4 font-semibold hover:ease-out duration-300 hover:text-[#E45D50] hover:bg-stone-100">
             <i class="ph-bold ph-arrow-bend-left-up text-lg"></i>
@@ -45,105 +45,101 @@
     </div>
 
     <main
-        class="flex flex-col bg-white border-x max-w-none prose prose-stone prose-lg text-pretty py-6 px-6 sm:px-16 sm:py-16">
+        class="flex flex-col bg-white border-x max-w-prose prose prose-stone prose-lg text-pretty py-6 px-6 sm:px-16 sm:py-16">
         <div id="hero">
             <div class="font-semibold text-sm uppercase text-stone-700 mb-2">Healthcare Startup</div>
-            <h1>At-Home Oral Health Testing</h1>
-            <img class="rounded-lg my-2 sm:my-4" src="../../assets/img/dental-tablet@2x.png"></img>
+            <h1 class="not-prose mb-8">At-Home Oral Health Testing</h1>
+            <img class="rounded-lg" src="../../assets/img/dental-tablet@2x.png"></img>
         </div>
 
-        <div id="overview" class="flex flex-col sm:flex-row sm:gap-8">
-            <div id="left" class="max-w-prose">
-                <p class="lead">Our client envisioned an at-home oral health test that would bring accessible and
-                    affordable
-                    care to dental deserts and improve awareness to oral-systemic health, oral health's connection to
-                    diseases such as diabetes and heart disease.</p>
-                <blockquote class="text-xl border-l-emerald-800">"...nearly 1.7 million people in the US did not have
-                    access to dental
-                    clinics within a 30-minute drive, and 24.7 million lived in dental care shortage areas."
-                    <a class="prose-figcaption decoration-dotted underline-offset-2"
-                        href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2828397">
-                        <figcaption>Dental Clinic Deserts in the US: Spatial Accessibility Analysis (2024)</figcaption>
-                    </a>
-                </blockquote>
-                <p class="">Over 6 months, I led design for a mobile app to guide users through taking an at-home oral
-                    health test where they would provide a saliva sample and scan a test card. Computer vision
-                    would then interpret your scan and assess your risk levels. Finally, you would receive your results
-                    and tailored advice within the app
-                    recommendations to improve oral health. </p>
-                <p>I partnered with engineering to build a working MVP app for our client to use for a pilot and pitch
-                    to investors to secure additional funding.</p>
-                <h3>Outcomes</h3>
-                <ul>
-                    <li>Partnered with Engineering team to build a pilot MVP of the end-to-end experience.</li>
-                    <li>Client pitched a working MVP and received a grant from a major dental association</li>
-                    <li>Coached a college hire with a technical background to play a Product Designer role</li>
-                </ul>
-                <h3>My Role</h3>
-                <p>I led end to end design and design reviews with the client. With engineering, I handed off features
-                    and created a Material 3 theme to brand the solution. I collaborated with a copywriter to define the
-                    kind of content needed and
-                </p>
-            </div>
-            <div id="right" class="text-nowrap sm:pr-8">
-                <h4 class="uppercase">Team</h4>
-                <div>Product Strategist</div>
-                <div class="flex items-center gap-1">
-                    <span class="">Lead Product Designer</span>
-                    <div class="tag">My
-                        Role</div>
-                </div>
-                <div>Product Designer</div>
-                <div>Technical Architect</div>
-                <div>Lead Developer</div>
-                <div>Developer</div>
-                <h4 class="uppercase">Phase</h4>
-                <p>Pre-Seed & Seed Stages</p>
-                <h4 class="uppercase">Industry</h4>
-                <p>Healthcare</p>
-            </div>
+        <div id="overview">
+            <blockquote class="text-l border-l-emerald-800">"...nearly 1.7 million people in the US did not have
+                access to dental
+                clinics within a 30-minute drive, and 24.7 million lived in dental care shortage areas."
+                <a class="prose-figcaption decoration-dotted underline-offset-2"
+                    href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2828397">
+                    <figcaption>Dental Clinic Deserts in the US: Spatial Accessibility Analysis (2024)</figcaption>
+                </a>
+            </blockquote>
+            <p>Our client wanted to improve dental care access in dental deserts by developing an oral health test
+                kit that people at home could take on their own. They'd provide a saliva sample and then scan a test
+                card using computer vision to get a personalized assessement of their oral health and tailored advice in
+                less than an hour, significantly reducing barriers to dental care.
+            </p>
+            <p>
+                Over 6 months, I led design for a mobile app to guide test takers at home to complete their test and
+                view their results, an employee web app to manually review and correct computer vision readings of test
+                cards scans to train the model, and a concept tablet app for providers to uncover dental trends across
+                their office and manage test kit inventory.
+            </p>
+            <p>My team included a junior product designer. I worked cross-functionally, facilitating design reviews
+                with the
+                founders, refining copy with the medical copywriter, and partnered with the
+                development team to validate feasibility, handoff
+                features, and conduct UX QA.</p>
+            <h3>Goals:</h3>
+            <ul>
+                <li>Create a working prototype of the end-to-end test card experience mobile app experience to conduct a
+                    pilot testing the
+                    efficacy of computer vision.</li>
+                <li>Design a process and web app to allow employees to review computer vision scans and improve computer
+                    vision</li>
+                <li>Explore the value add of the test kit to providers as a sales channel</li>
+            </ul>
+            <p>The design effort ended before the pilot was conducted but the client raised hundreds of thousands in
+                funding from investors ahead of the pilot demoing mockups I created to investors.</p>
+        </div>
 
         </div>
 
-        <div id="patients" class="max-w-prose">
-            <h2 class="">Onboarding</h2>
+        <div id="test">
+            <h2 class="">Simple Do-It-Yourself Testing</h2>
+            <p>
+                I collaborated with the client to design a test taking process and the mobile app to
+                guide users from prepping their saliva sample to taking a
+                quality
+                scan of their test card and finally
+                getting their oral health report. Since we couldn't expect dental professionals to be present, we made
+                sure to add guardrails and use plain language to prevent errors. COVID-19
+                tests were a major
+                inspiration for the process since we could expect users to be familiar with taking one
+                and have a mental model of how to take a test at home.
+            </p>
+            <h3>Test Scanning</h3>
+            <img class="rounded-lg" src="../../assets/img/dental-patient-scanning.png"></img>
+            <figcaption>Real-time guidance helps users take a quality scan
+            </figcaption>
+            <p>
+                Computer vision needed a quality scan to accurately read and interpret test card results. Lighting,
+                exposure, contrast, or positioning could all make a scan difficult to read so we designed real-time
+                feedback to let users know if they were scanning correctly. The engineering team had a large backlog to
+                work through so we decided on addressing positioning first and planned to use the pilot to learn what
+                mistakes users might make rather than overengineer the guardrails.
+            </p>
+        </div>
+        <div id="advice">
+            <h2 class="">Actionable Advice</h2>
             <img class="rounded-lg" src="../../assets/img/dental-patient-dashboard@2x.png"></img>
-            <h3 class="">Health Education Through Accessible Jargon</h3>
-            <p>We needed to make the dental jargon understandable for a wide audience. The value was helping at-home
-                testers understand not just what we already know, brushing and flossing, but understand other factors,
-                including the effect of acidity. For example, Internally we would use "caries" instead of "cavities" to
-                speak more like dental professionals but jargon would be confusing out of the gate for our users. We
-                wanted them to understand how the test worked so we leveraged progressive disclosure to provide more
-                education once users digested surface level concepts.</p>
-            <h2 class="">Closing the Knowledge Gap</h2>
-            <img class="rounded-lg" src="../../assets/img/dental-patient-dashboard@2x.png"></img>
-            <h3 class="">Health Education Through Accessible Jargon</h3>
-            <p>We needed to make the dental jargon understandable for a wide audience. The value was helping at-home
-                testers understand not just what we already know, brushing and flossing, but understand other factors,
-                including the effect of acidity. For example, Internally we would use "caries" instead of "cavities" to
-                speak more like dental professionals but jargon would be confusing out of the gate for our users. We
-                wanted them to understand how the test worked so we leveraged progressive disclosure to provide more
-                education once users digested surface level concepts.</p>
-            <h3 class="">Easing users in with Progressive Disclosure</h3>
-            <p class="text-pretty">We needed to make the dental jargon understandable for a wide audience. The value was
-                helping at-home
-                testers understand not just what we already know, brushing and flossing, but understand other factors,
-                including the effect of acidity. For example, Internally we would use "caries" instead of "cavities" to
-                speak more like dental professionals but jargon would be confusing out of the gate for our users. We
-                wanted them to understand how the test worked so we leveraged progressive disclosure to provide more
-                education once users digested</p>
-            <h3 class="">Immediate Scanning Feedback</h3>
+            <p>Once computer vision analyzed their test card, users would see an oral wellness report of their readings,
+                risk levels and tailored advice. The goal here was to help test takers understand why they received the
+                risk levels they did, and how they could change their habits to improve their score.</p>
+            <p>Without a dentist at home to explain dental health to users, the advice offered needed to be in everyday
+                language. I partnered with the medical copywriter to use more everyday language and use friendly names
+                alongside scientific names. For example, we paired Glucosyltransferase with its friendly name “Plaque
+                Formation”.</p>
         </div>
 
         <div id="providers">
-            <h2>Dental Provider Patient Health Dashboard Concept</h2>
+            <h2>Dental Provider Dashboard Concept</h2>
             <img class="rounded-lg mb-0" src="../../assets/img/dental-tablet@2x.png"></img>
-            <figcaption>At-a-glance view of a provider's patient health, test kit inventory, and reminders. Providers
-                would be able to view their office's oral health and identify trends in patient health, reorder tests
-                within the app when low.</figcaption>
-            <p class="">Investors wanted to consider Providers as a sales channel so I designed a concept dashboard for
-                Providers to highlight the value of tracking patient tests over the long-term and improve the ease of
-                reordering tests.
+            <figcaption>Caption goes here
+            </figcaption>
+            <p>The client wanted to explore dental providers as a potential market. I saw an opportunity for dentists
+                to use aggregated patient risk data across their clinic and identify trends to improve their approach to
+                care. I designed a
+                tablet dashboard concept visualizing risk levels across patients and included a few quality of life
+                features to streamline test kit inventory management and remind when patients would need to take another
+                test.
             </p>
         </div>
 
@@ -151,36 +147,23 @@
             <h2>Training Computer Vision</h2>
             <figure>
                 <img class="rounded-lg" src="../../assets/img/dental-admin-review-results.png"></img>
-                <figcaption>Startup employees would manually review completed tests and correct any Computer Vision
+                <figcaption>Employees would manually review completed tests and correct any Computer Vision
                     mistakes.
                 </figcaption>
             </figure>
-            <p>At home, we couldn't expect a dental professional to be present and help interpret results so it
-                was crucial that computer vision was accurate. I led the design for a queue of test readings employees
-                could review test results and correct computer vision's readings. The test card hadn't been finalized
-                yet so we researched available test cards to anticipate the appropriate scale and results.</p>
-            <h3>Defining Pilot Success</h3>
-            <p>Our engagement ended before the pilot but if we had more time I would have defined success metrics with
-                the client. What scan accuracy rate would we need to reach before we could consider the pilot a success?
-                For release? What markers were most error prone? What kind of guidance do users make when scanning their
-                card to improve scan quality? </p>
+            <p>Computer vision needed to be trained to read test cards accurately so I designed a feedback loop and
+                web app for employees to review a queue of completed tests and make corrections to computer vision’s
+                readings. This feedback would be used to train computer vision and also allow reviewers to identify
+                issues with scan quality during the pilot.</p>
+            <p>Test card design wasn’t far along enough to know what the exact test card readings would look like at
+                this point so rather than leave the markers blank I researched existing tests in the market to
+                anticipate how each marker would be read.</p>
+
         </div>
-
-        <div id="collaboration">
-            <h2>Update Material 3 to Brand Colors</h2>
-            <div class="rounded-lg bg-stone-200 grid place-content-center h-24">Placeholder for Code</div>
-            <img class="rounded-lg" src="../../assets/img/dental-color-scheme@2x.png"></img>
-            <p>I partnered with the Engineering Lead to re-theme a Material 3 front-end UI library, React Native Paper,
-                so that our Figma UI kit and front-end components would align to a single source of truth. I created
-                color scales and chose appropriate colors for each of Material's semantic colors. To ease handoff to
-                engineering, I mapped the color theme into a .json file with brand-aligned the could copy and paste into
-                their theme.</p>
-
-            <h2>Saving Client Funds using Free Fonts</h2>
-            <p>The brand guidelines provided by the client specified two paid license fonts, however the client didn't
-                have a license to use them. They'd cost nearly $1000 to acquire. I put together a quick comparison with
-                free Google Fonts alternative that preserved the original intent. These are not huge expenses, but for a
-                startup still seeking funding, every dollar counted.</p>
+        <div id="next">
+            <h2>Outcomes</h2>
+            <p>The design team wrapped up work before the pilot began but the designs created were instrumental in
+                helping the client win grants from major dental associations.</p>
         </div>
     </main>
 
@@ -188,7 +171,7 @@
         <div id="left" class="">
             <p>Made by James with Tailwind CSS</p>
         </div>
-        <div id="right" class="text-stone-500">
+        <div id="right">
             © 2025
         </div>
     </footer>

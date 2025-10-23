@@ -21,7 +21,8 @@
 
 <body class="flex flex-col h-full text-stone-800 w-full">
     <div id="background"
-        class="bg-stone-50 w-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+        class="bg-stone w-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+
         <header>
             <nav class="flex w-full justify-between max-w-(--breakpoint-lg) mx-auto py-6 px-6 sm:px-16">
                 <a id="logo"
@@ -34,36 +35,34 @@
             </nav>
         </header>
 
-        <main class="flex flex-col gap-12 max-w-(--breakpoint-md) py-6 px-6 sm:px-16 sm:py-16 mx-auto">
+        <main class="flex flex-col gap-12 max-w-(--breakpoint-lg) py-6 px-6 sm:px-16 sm:py-16 mx-auto">
+
             <!-- Hero -->
             <div id="hero">
                 <div class="flex flex-col gap-4">
                     <img class="w-8" src="./assets/img/gradient-circle-red-orange.svg" alt="avatar">
-                    <div id="name">
-                        <h1 class="text-xl">James Song<span class="font-normal"></span></h1>
-                        <subtitle class="text-xl">Lead Product Designer</subtitle>
-                    </div>
-                    <p class="text-xl leading-8 text-pretty text-stone-700">I co-create digital experiences with clients
-                        to solve
+                    <h1 class="sm:text-3xl font-serif text-balance">I'm a Lead Product Designer based in sunny Los
+                        Angeles</h1>
+                    <p class="text-xl text-stone-600 sm:w-4/5">I co-create digital experiences with clients to solve
                         both customer and business problems. I've been designing for 8+ years for clients ranging from
                         startups to Fortune 200 firms.
                     </p>
+
                 </div>
             </div>
 
             <!-- Work Cards -->
             <div id="work" class="flex flex-col gap-8">
-                <!-- Dental Startup Card -->
+                <!-- Dental Startup -->
                 <a id="dental" class="card" href="./work/dental-startup">
-                    <img class="object-cover rounded-t-2xl aspect-3/2"
+                    <img class="object-cover rounded-t-lg aspect-3/2 lg:rounded-none lg:rounded-l-lg lg:mb-0"
                         src="./assets/img/dental-patient-dashboard@2x.png"></img>
                     <div id="description" class="flex flex-col gap-4 p-8">
                         <h2>At-Home Oral Health Testing</h2>
-                        <p class="text-base">Designing an app for an at-home oral health testing kit to help understand
-                            their risks and
+                        <p>Designing an app for an at-home oral health testing kit to help understand their risks and
                             receive tailored recommendations on how to improve
                             oral
-                            health.</p>
+                            health</p>
                         <div class="flex flex-row gap-2 flex-wrap">
                             <div class="tag">Product Design</div>
                             <div class="tag">Service Design</div>
@@ -74,7 +73,8 @@
                 </a>
                 <!-- AI for TAs -->
                 <a id="teachingAssistantsAI" class="card" href="./work">
-                    <img class="object-cover rounded-t-2xl aspect-3/2" src="./assets/img/placeholder/burger.png"></img>
+                    <img class="object-cover rounded-t-lg aspect-3/2 lg:rounded-none lg:rounded-l-lg lg:mb-0"
+                        src="./assets/img/placeholder/burger.png"></img>
                     <div id="description" class="flex flex-col gap-4 p-8">
                         <h2>Generating Customized Study Materials for University TAs with AI</h2>
                         <p>Concept to enable Teaching Assistants create tailored materials for office hours
@@ -87,7 +87,7 @@
                 </a>
                 <!-- Texting Platform -->
                 <a id="dental" class="card" href="./work/2waytexting">
-                    <img class="object-cover rounded-t-2xl aspect-3/2"
+                    <img class="object-cover rounded-t-lg aspect-3/2 lg:rounded-none lg:rounded-l-lg lg:mb-0"
                         src="./assets/img/marketing-text-platform-hero@2x.png"></img>
                     <div id="description" class="flex flex-col gap-4 p-8">
                         <h2>Contactless 2-Way Texting for a COVID-19 World</h2>
@@ -102,7 +102,8 @@
 
                 <!-- Onboarding Redesign -->
                 <a id="pointsBank" class="card" href="./work/travel-bank">
-                    <img class="object-cover rounded-t-2xl aspect-3/2" src="./assets/img/travel-bank-hero.png"></img>
+                    <img class="object-cover rounded-t-lg aspect-3/2 lg:rounded-none lg:rounded-l-lg lg:mb-0"
+                        src="./assets/img/travel-bank-hero.png"></img>
                     <div id="description" class="flex flex-col gap-4 p-8">
                         <h2>Building Trust to Reduce Onboarding Drop-Offs</h2>
                         <p>Uncovering drop-off drivers to redesign onboarding and introducing more data-driven thinking
@@ -113,21 +114,31 @@
                         </div>
                     </div>
                 </a>
+                <!-- Self-Install -->
+                <a id="dental" class="card" href="./work/home-security">
+                    <img class="object-cover rounded-t-lg aspect-3/2 lg:rounded-none lg:rounded-l-lg lg:mb-0"
+                        src="./assets/img/placeholder/welcome.png"></img>
+                    <div id="description" class="flex flex-col gap-4 p-8">
+                        <h2>Getting More Customers to Self-Install Before Their Activation Call</h2>
+                        <p>I led a redesign of the installation process to encourage customers to finish installing
+                            their DIY home security system after activation calls were routinely going beyond the
+                            scheduled time.</p>
+                        <div class="flex flex-row gap-2 flex-wrap">
+                            <div class="tag">FinTech</div>
+                            <div class="tag">Web</div>
+                        </div>
+                    </div>
+                </a>
             </div>
     </div>
     </main>
 
-    <footer class="">
-        <div id="background"
-            class="bg-stone-50 w-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
-            <div id="content" class="flex justify-between text-sm text-stone-500 px-8 py-8">
-                <div id="left">
-                    © 2025 James Song
-                </div>
-                <div id="right">
-                    Made with Tailwind CSS
-                </div>
-            </div>
+    <footer class="flex justify-between px-8 py-8 text-sm text-stone-500">
+        <div id="left">
+            Made by James with Tailwind CSS
+        </div>
+        <div id="right">
+            © 2025 James Song
         </div>
     </footer>
 </body>
