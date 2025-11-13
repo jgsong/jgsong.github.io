@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="../../css/tailwind.css">
+
+    <!-- Phosphor Icons -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+
+    <!-- Favicon -->
+    <link rel='icon' href='../assets/img/favicon.ico' type='image/x-icon' />
+
+    <title>James Song</title>
+</head>
+
+<body
+    class="flex flex-col mx-auto bg-white max-w-prose bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+    <header>
+        <nav class="flex w-full justify-between bg-white border-b sm:border-x py-6 px-6 sm:px-16">
+            <a id="logo"
+                class="cursor-pointer text-lg font-semibold transition-[color] hover:ease-out duration-300 hover:text-[#E45D50]"
+                href="../../">James Song</a>
+            <div id="links" class="flex gap-4 items-end">
+                <a class="cursor-pointer hover:text-emerald-800" href="">Work</a>
+                <a class="cursor-pointer hover:text-emerald-800" href="">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <div id="fixedBottomNav" class="flex grow w-full max-w-prose fixed bottom-0 bg-white border-x border-t divide-x">
+        <a id="left"
+            class="flex justify-start grow gap-2 p-4 font-semibold hover:ease-out duration-300 hover:text-[#E45D50] hover:bg-stone-100">
+            <i class="ph-bold ph-arrow-bend-left-up text-md"></i>
+            Back to Home
+        </a>
+        <a id="right"
+            class="flex justify-end grow gap-2 p-4 font-semibold hover:ease-out duration-300 hover:text-[#E45D50] hover:bg-stone-100">
+            Next Case Study
+            <i class="ph-bold ph-arrow-right text-lg"></i>
+        </a>
+    </div>
+
+    <main class="flex flex-col bg-white border-x prose prose-stone prose-lg text-pretty py-6 px-6 sm:px-16 sm:py-16">
+        <div id="hero">
+            <div class="font-semibold text-sm uppercase text-stone-700 mb-2">Fraud Detection</div>
+            <h1 class="not-prose">Ghost Busting Fake College Applications</h1>
+            <img class="rounded-lg my-2 sm:my-4" src="../../assets/img/edu-hero.png">
+        </div>
+        <div id="overview" class="">
+            <p>In 2025 I led a redesign of a student application fraud detection tool for a major college system that
+                serves over 2 million students. Fraudsters would submit fake student apps and to scam win
+                financial aid. These those ghost students would Professors and real students would sometimes
+                show up
+                to near-empty classrooms because of these ghost students.
+            </p>
+            <p>
+                Analysts would use the application fraud detection tool to review student enrollment application
+                metadata and flag fraudulent applications. Our goal was to improve the speed and accuracy of analysts to
+                flag fraudulent
+                applications so that ML algorithm would have better data to train off of and automatically detect fraud
+                with better accuracy, a virtuous cycle.
+            </p>
+            <p>Colleges were committed to fighting fraud but
+                were struggling to keep up. Applications had increased by over 2 million from the year before and many
+                didn't
+                have dedicated staff to review applications. Employees were doing the best to stem the tide on top of
+                their day-to-day responsibilites.</p>
+            <p>In X months, I led a team with a product designer and product architect to update the tool. We worked
+                with a
+                18 person working group committee of power users and the engineering team to create a solution that
+                would improve user workflows and play well with existing algorithmic fraud detection efforts and
+                technical constraints.</p>
+        </div>
+        <div id="research">
+            <h2 class="">Planning</h2>
+            <p>I created a plan to research, design, and prioritize features to improve the tool. We had limited time to
+                Conducted contextual
+                inquiries and interviews, we learned XYZ</p>
+            <p>Regularly met with a working group of 18+ users to understand workflows and validate design decisions</p>
+            <ol>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ol>
+        </div>
+        <div id="design">
+            <h2>Location is Everything</h2>
+            <p>There were more than a hundred data fields shown to analysts for each profile, but they relied on just a
+                handful of key fields
+                before making the decision whether to flag an application as fraudulent or not. They weren't easy to
+                scan
+                and were scattered across the page. We could make the most impact by surfacing those to the top and put
+                commonly compared fields next to each other.</p>
+            <p>IP Addresses were scattered across the page so I reorganized them into </p>
+            <img class="rounded-lg my-2 sm:my-4" src="../../assets/img/edu-hero.png">
+            <h2 class="">Explaining the Fraud Score</h2>
+            <p>Each application had a fraud score assigned by the system that analysts considered useless. Some scores
+                were above 100% and scores often didn't line up with their assessments and
+                they had no idea how it was put together.</p>
+            <p>We needed to build trust in it and show how it's put together so analysts can "compare notes" with the
+                score.</p>
+            <p>I led a working session with the engineer who created the algorithm. I broke down all the different
+                factors that went into the score. One challenge was that we didn't have visiblity into the ML portion of
+                the algorithm. Also, couldn't show analysts exactly how the score was put together to prevent bad actors
+                on the inside from reverse engineering the score and using it to bypass the system</p>
+        </div>
+    </main>
+
+    <footer class="flex justify-between px-8 py-8 border bg-white text-sm mb-12">
+        <div id="left" class="text-stone-500">
+            <p>Made by James with Tailwind CSS</p>
+        </div>
+        <div id="right" class="text-stone-500">
+            © 2025
+        </div>
+    </footer>
+</body>
+
+</html>
