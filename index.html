@@ -23,15 +23,7 @@
     <div id="background"
         class="bg-stone-50 w-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
         <header>
-            <nav class="flex w-full justify-between max-w-(--breakpoint-lg) mx-auto py-6 px-6 sm:px-16">
-                <a id="logo"
-                    class="cursor-pointer text-lg font-semibold transition hover:ease-out duration-300 hover:text-[#E45D50]"
-                    href="./">James Song</a>
-                <div id="links" class="flex gap-4 items-end">
-                    <a class="cursor-pointer hover:text-emerald-800" href="">Work</a>
-                    <a class="cursor-pointer hover:text-emerald-800" href="./about">About</a>
-                </div>
-            </nav>
+
         </header>
 
         <main class="flex flex-col gap-12 max-w-(--breakpoint-md) py-6 px-6 sm:px-16 sm:py-16 mx-auto">
@@ -45,14 +37,24 @@
                     </div>
                     <p class="text-xl leading-8 text-pretty text-stone-700">I co-create digital experiences with clients
                         to solve
-                        both customer and business problems. I've been designing for 8+ years for clients ranging from
-                        startups to Fortune 200 firms.
+                        both customer and business problems. I've been designing for over 9 years for clients ranging
+                        from
+                        startups to Fortune 50 firms.
                     </p>
                 </div>
             </div>
 
             <!-- Work Cards -->
             <div id="work" class="flex flex-col gap-8">
+                <!-- edtech -->
+                <a id="dental" class="card" href="./work/edu-fraud">
+                    <img class="object-cover rounded-t-2xl aspect-3/2" src="./assets/img/edu-hero.png"></img>
+                    <div id="description" class="flex flex-col gap-4 p-8">
+                        <h2>Ghost Busting Fake College Applications</h2>
+                        <p class="text-base">Surfacing common fraud patterns to accelerate Fraud analyst workflows and
+                            improve a AI/ML fraud filter algorithm</p>
+                    </div>
+                </a>
                 <!-- Dental Startup Card -->
                 <a id="dental" class="card" href="./work/dental-startup">
                     <img class="object-cover rounded-t-2xl aspect-3/2"
@@ -64,12 +66,6 @@
                             receive tailored recommendations on how to improve
                             oral
                             health.</p>
-                        <div class="flex flex-row gap-2 flex-wrap">
-                            <div class="tag">Product Design</div>
-                            <div class="tag">Service Design</div>
-                            <div class="tag">Healthcare</div>
-                            <div class="tag">Mobile</div>
-                        </div>
                     </div>
                 </a>
                 <!-- AI for TAs -->
@@ -79,10 +75,6 @@
                         <h2>Generating Customized Study Materials for University TAs with AI</h2>
                         <p>Concept to enable Teaching Assistants create tailored materials for office hours
                             on-the-fly</p>
-                        <div class="flex flex-row gap-2 flex-wrap">
-                            <div class="tag">AI</div>
-                            <div class="tag">Web</div>
-                        </div>
                     </div>
                 </a>
                 <!-- Texting Platform -->
@@ -94,9 +86,6 @@
                         <p>Designing 2-Way Texting to enable a tax preparation firm to maintain customer
                             relationships
                             across over XYZ franchises</p>
-                        <div class="flex flex-row gap-2 flex-wrap">
-                            <div class="tag">Web</div>
-                        </div>
                     </div>
                 </a>
 
@@ -107,10 +96,6 @@
                         <h2>Building Trust to Reduce Onboarding Drop-Offs</h2>
                         <p>Uncovering drop-off drivers to redesign onboarding and introducing more data-driven thinking
                             for a digital attacker bank.</p>
-                        <div class="flex flex-row gap-2 flex-wrap">
-                            <div class="tag">FinTech</div>
-                            <div class="tag">Web</div>
-                        </div>
                     </div>
                 </a>
             </div>
