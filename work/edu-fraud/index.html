@@ -19,23 +19,23 @@
     <title>James Song</title>
 </head>
 
-<body
-    class="flex flex-col mx-auto bg-white max-w-prose bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
-    <header>
-        <nav class="flex w-full justify-between bg-white border-b sm:border-x py-6 px-6 sm:px-16">
-            <a id="logo"
-                class="cursor-pointer text-lg font-semibold transition-[color] hover:ease-out duration-300 hover:text-[#E45D50]"
-                href="../../">James Song</a>
-            <div id="links" class="flex gap-4 items-end">
-                <a class="cursor-pointer hover:text-emerald-800" href="">Work</a>
-                <a class="cursor-pointer hover:text-emerald-800" href="">About</a>
-            </div>
+<body class="flex flex-col mx-auto bg-white max-w-prose">
+    <header class="">
+        <nav class="flex py-6 px-6 md:px-0">
+            <a id="logo" class="cursor-pointer flex gap-2 items-center" href="../../">
+                <img class="w-8" src="../../assets/img/gradient-circle-red-orange.svg" alt="avatar">
+                <span
+                    class="text-lg font-semibold transition-[color] hover:ease-out duration-300 hover:text-[#E45D50]">James
+                    Song</span>
+            </a>
         </nav>
     </header>
 
-    <div id="fixedBottomNav" class="flex grow w-full max-w-prose fixed bottom-0 bg-white border-x border-t divide-x">
+    <div id="fixedBottomNav"
+        class="flex grow w-full max-w-prose fixed bottom-0 bg-white rounded-t-2xl border-stone-200 border-t-1 border-x-1 divide-x divide-stone-200">
         <a id="left"
-            class="flex justify-start grow gap-2 p-4 font-semibold hover:ease-out duration-300 hover:text-[#E45D50] hover:bg-stone-100">
+            class="flex justify-start grow gap-2 p-4 font-semibold hover:ease-out duration-300 hover:text-[#E45D50] hover:bg-stone-100"
+            href="../../index.html">
             <i class="ph-bold ph-arrow-bend-left-up text-md"></i>
             Back to Home
         </a>
@@ -46,52 +46,56 @@
         </a>
     </div>
 
-    <main class="flex flex-col bg-white border-x prose prose-stone prose-lg text-pretty py-6 px-6 sm:px-16 sm:py-16">
+    <main class="flex flex-col bg-white prose prose-stone prose-lg text-pretty md:pb-0 md:px-0 py-6 px-6">
         <div id="hero">
-            <div class="font-semibold text-sm uppercase text-stone-700 mb-2">Fraud Detection</div>
-            <h1 class="not-prose text-stone-800">Ghost Busting Fake College Applications</h1>
+            <div class="font-semibold text-sm uppercase text-stone-700 mb-2">College Fraud Detection</div>
+            <h1 class=" text-stone-800">Flagging Fake College Applications</h1>
             <img class="rounded-lg my-2 sm:my-4" src="../../assets/img/edu-hero.png">
         </div>
-        <div id="overview" class="">
-            <p>In 2025 I led a redesign of a student application fraud detection tool for a major college system that
-                serves over 2 million students. Fraudsters would submit fake student apps and to scam win
-                financial aid. These those ghost students would Professors and real students would sometimes
+        <div id="overview">
+            <p>In 2025, I led research and redesign of a fraud detection tool over 4 months for a large college system
+                with over 2
+                million students enrolled. Fraudsters would submit fake student apps to scam
+                financial aid and professors and students would sometimes
                 show up
-                to near-empty classrooms because of these ghost students.
+                to near-empty classrooms because of these "ghost students". Fraud analysts would use the tool to review
+                student application
+                metadata and flag suspicious apps. Student
+                applications however, had swelled by over 64% year-over-year and
+                fraud analysts were struggling to keep up.
             </p>
             <p>
-                Analysts would use the application fraud detection tool to review student enrollment application
-                metadata and flag fraudulent applications. Our goal was to improve the speed and accuracy of analysts to
+                Our goal was to improve the speed and accuracy of analysts to
                 flag fraudulent
-                applications so that ML algorithm would have better data to train off of and automatically detect fraud
-                with better accuracy, creating a virtuous cycle.
+                applications so they could process more applications and improved manual flagging would then help train
+                the
+                college system's AI/ML to improve automated detection, creating a virtuous cycle.
             </p>
-            <p>Colleges were committed to fighting fraud but
-                were struggling to keep up. Applications had increased by over 2 million from the year before and many
-                didn't
-                have dedicated staff to review applications. Employees were doing the best to stem the tide on top of
-                their day-to-day responsibilites.</p>
-            <p>In X months, I led a team with a product designer and product architect to update the tool. We worked
-                with a
-                18 person working group committee of power users and the engineering team to create a solution that
-                would improve user workflows and play well with existing algorithmic fraud detection efforts and
-                technical constraints.</p>
-        </div>
-        <div id="research">
-            <h2 class="">Planning</h2>
-            <p>I created a plan to research, design, and prioritize features to improve the tool. We had limited time to
-                Conducted contextual
-                inquiries and interviews, we learned XYZ</p>
-            <p>Regularly met with a working group of 18+ users to understand workflows and validate design decisions</p>
-            <ol>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ol>
+            <p>I led one other designer to deliver a prototype
+                of the first phase of the redesign and collaborated with engineering leads and college system
+                leadership to define the scope for the first phase and create a roadmap for future phases. We demoed the
+                prototype a group of over 80 fraud analysts
+                from across the college system to overwhelmingly positive feedback and concluded the project by
+                handing off designs and user
+                stories to development.
+            </p>
         </div>
         <div id="design">
-            <h2>Location is Everything</h2>
-            <p>There were more than a hundred data fields shown to analysts for each profile, but they relied on just a
+            <h2>Revamped Application Metadata View</h2>
+            <figure>
+                <img class="rounded-lg" src="../../assets/img/edu-before-appdetails.png"></img>
+                <figcaption>Before
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="rounded-lg" src="../../assets/img/edu-hero.png"></img>
+                <figcaption>After
+                </figcaption>
+            </figure>
+            <p>REWRITE !!!! There were more than a hundred data
+                fields shown to analysts for each profile, but the relied
+                on
+                just a
                 handful of key fields
                 before making the decision whether to flag an application as fraudulent or not. They weren't easy to
                 scan
@@ -100,25 +104,51 @@
             <p>IP Addresses were scattered across the page so I reorganized them into </p>
             <h2 class="">Explaining the Fraud Score</h2>
             <img class="rounded-lg my-2 sm:my-4" src="../../assets/img/edu-fraudscore.png">
-            <p>Each application had a fraud score assigned by the system that analysts considered useless. Some scores
-                were above 100% and scores often didn't line up with their assessments and
-                they had no idea how it was put together.</p>
-            <p>We needed to build trust in it and show how it's put together so analysts can "compare notes" with the
-                score.</p>
-            <p>I led a working session with the engineer who created the algorithm. I broke down all the different
-                factors that went into the score. One challenge was that we didn't have visiblity into the ML portion of
-                the algorithm. Also, couldn't show analysts exactly how the score was put together to prevent bad actors
-                on the inside from reverse engineering the score and using it to bypass the system</p>
+            <p>Each application had a fraud score assigned by the fraud detection algorithm but none of the analysts
+                used this score. They weren't sure how to interpret it since scores were sometimes above 100% and they
+                didn't know how it was calculated.</p>
+            <p>We needed to build trust in it and "show our work" so analysts can compare notes with the
+                score. One constraint was that it couldn't show exact thresholds or reasons to prevent bad actors from
+                reverse engineering the algorithm. I collaborated with the engineer who created the algorithm to
+                understand the algorithm and come up with analyst-friendly names.</p>
+        </div>
+        <div id="design">
+            <h2>Dashboard</h2>
+            <figure>
+                <img class="rounded-lg" src="../../assets/img/edu-before-dashboard.png"></img>
+                <figcaption>Before - Users could only sort data and relied on spreadsheets to look for suspicious trends
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="rounded-lg my-2 sm:my-4" src="../../assets/img/edu-dashboard.png">
+                <figcaption>After - Analysts can filter and sort on every single column and more data can be viewed in a
+                    horizontal scroll
+                </figcaption>
+            </figure>
+            <p>Fraud analysts would use Excel to filter and search for patterns between
+                fraudulent apps and apps that
+                needed review before and then search and flag those within the tool. I saw an opportunity to enable
+                analysts to do more data slicing in the dashboard so I worked with the designer on my team to bring in
+                features such as
+                multi-row filtering to allow analysts
+                with simpler workflows to work within the tool rather than switch back and forth to a spreadsheet. In
+                future phases we prioritized enhancements to allow for even more advanced data filtering and full screen
+                views.</p>
+            <p></p>
+
+        </div>
+        <div id="ancillary">
+            <h2>Design System</h2>
+            <p>The client had an existing design system so we adhered to their guidelines. We contributed button
+                variants back to the </p>
         </div>
     </main>
 
-    <footer class="flex justify-between px-8 py-8 border bg-white text-sm mb-12">
+    <footer class="flex justify-between px-8 py-8  bg-white text-sm mb-12">
         <div id="left" class="text-stone-500">
-            <p>Made by James with Tailwind CSS</p>
+            <p>Made by James with Tailwind CSS © 2025</p>
         </div>
-        <div id="right" class="text-stone-500">
-            © 2025
-        </div>
+
     </footer>
 </body>
 
