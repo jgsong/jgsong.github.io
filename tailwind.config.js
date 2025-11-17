@@ -48,7 +48,7 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
-            maxWidth: "100ch", //default is 65, recommended is 50-75
+            maxWidth: "75ch", //default is 65, recommended is 50-75
           },
         },
       },

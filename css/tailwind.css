@@ -26,7 +26,6 @@
     --spacing: 0.25rem;
     --breakpoint-md: 48rem;
     --breakpoint-lg: 64rem;
-    --container-7xl: 80rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
@@ -216,7 +215,7 @@
   }
   .prose {
     color: var(--tw-prose-body);
-    max-width: 100ch;
+    max-width: 75ch;
     :where(p):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
       margin-top: 1.25em;
       margin-bottom: 1.25em;
@@ -1088,9 +1087,6 @@
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
-  .pb-6 {
-    padding-bottom: calc(var(--spacing) * 6);
-  }
   .text-center {
     text-align: center;
   }
@@ -1227,6 +1223,14 @@
     --tw-prose-invert-th-borders: oklch(44.4% 0.011 73.639);
     --tw-prose-invert-td-borders: oklch(37.4% 0.01 67.558);
   }
+  .hover\:rounded-t-2xl {
+    &:hover {
+      @media (hover: hover) {
+        border-top-left-radius: var(--radius-2xl);
+        border-top-right-radius: var(--radius-2xl);
+      }
+    }
+  }
   .hover\:border-stone-400 {
     &:hover {
       @media (hover: hover) {
@@ -1286,29 +1290,14 @@
       border-inline-width: 1px;
     }
   }
-  .sm\:px-0 {
-    @media (width >= 40rem) {
-      padding-inline: calc(var(--spacing) * 0);
-    }
-  }
   .sm\:px-16 {
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 16);
     }
   }
-  .sm\:py-8 {
-    @media (width >= 40rem) {
-      padding-block: calc(var(--spacing) * 8);
-    }
-  }
   .sm\:py-16 {
     @media (width >= 40rem) {
       padding-block: calc(var(--spacing) * 16);
-    }
-  }
-  .sm\:pb-0 {
-    @media (width >= 40rem) {
-      padding-bottom: calc(var(--spacing) * 0);
     }
   }
   .sm\:text-3xl {

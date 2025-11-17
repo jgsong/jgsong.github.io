@@ -34,13 +34,13 @@
     <div id="fixedBottomNav"
         class="flex grow w-full max-w-prose fixed bottom-0 bg-white rounded-t-2xl border-stone-200 border-t-1 border-x-1 divide-x divide-stone-200">
         <a id="left"
-            class="flex justify-start grow gap-2 p-4 font-semibold hover:ease-out duration-300 hover:text-[#E45D50] hover:bg-stone-100"
+            class="flex justify-start grow gap-2 p-4 font-semibold hover:ease-out duration-300 hover:text-[#E45D50] hover:bg-stone-100 hover:rounded-t-2xl"
             href="../../index.html">
             <i class="ph-bold ph-arrow-bend-left-up text-md"></i>
             Back to Home
         </a>
         <a id="right"
-            class="flex justify-end grow gap-2 p-4 font-semibold hover:ease-out duration-300 hover:text-[#E45D50] hover:bg-stone-100">
+            class="flex justify-end items-center grow gap-2 p-4 font-semibold hover:ease-out duration-300 hover:text-[#E45D50] hover:bg-stone-100 hover:rounded-t-2xl">
             Next Case Study
             <i class="ph-bold ph-arrow-right text-lg"></i>
         </a>
@@ -73,35 +73,49 @@
             </p>
             <p>I led one other designer to deliver a prototype
                 of the first phase of the redesign and collaborated with engineering leads and college system
-                leadership to define the scope for the first phase and create a roadmap for future phases. We demoed the
-                prototype a group of over 80 fraud analysts
-                from across the college system to overwhelmingly positive feedback and concluded the project by
-                handing off designs and user
-                stories to development.
+                leadership to define the scope for the first phase and create a roadmap for future phases. We presented
+                the
+                prototype to a group of over 80 fraud analysts
+                from across the system to overwhelmingly positive feedback and the redesign is expected to be
+                in production in the next year.
             </p>
         </div>
-        <div id="design">
-            <h2>Revamped Application Metadata View</h2>
+        <div id="appdetails">
+            <h2>Optimizing Application Data View for Humans</h2>
+            <p>We learned from contextual inquiries and user interviews that analysts mostly relied on a handful of
+                fields such as IP Address, age, and home addresses
+                before making the decision whether to flag an application as fraudulent or not. They were scattered
+                across the page and some past the fold.</p>
             <figure>
                 <img class="rounded-lg" src="../../assets/img/edu-before-appdetails.png"></img>
-                <figcaption>Before
+                <figcaption>Before redesign - Metadata was very difficult to scan and commonly compared fields weren't
+                    placed
+                    near each other
+                </figcaption>
+            </figure>
+
+
+            <p>We could improve efficiency by grouping the data into logical
+                categories,
+                prioritizing key fields to the top, and placing commonly compared attributes near each other.</p>
+            <figure>
+                <img class="rounded-lg" src="../../assets/img/edu-hero.png"></img>
+                <figcaption>After redesign - Utilizing screen space more efficiently while preserving data density
                 </figcaption>
             </figure>
             <figure>
-                <img class="rounded-lg" src="../../assets/img/edu-hero.png"></img>
-                <figcaption>After
+                <img class="rounded-lg" src="../../assets/img/edu-appdetails-scrolled.png"></img>
+                <figcaption>After redesign - Logical categories improve scannability and better align with analyst
+                    mental models
                 </figcaption>
             </figure>
-            <p>REWRITE !!!! There were more than a hundred data
-                fields shown to analysts for each profile, but the relied
-                on
-                just a
-                handful of key fields
-                before making the decision whether to flag an application as fraudulent or not. They weren't easy to
-                scan
-                and were scattered across the page. We could make the most impact by surfacing those to the top and put
-                commonly compared fields next to each other.</p>
-            <p>IP Addresses were scattered across the page so I reorganized them into </p>
+            <p>Analysts were often cross-checking data online using IP validators and address checkers. I worked with
+                the engineering team to identify APIs and data dictionaries to automate these checks and surface data
+                in the application metadata view
+                so they could see at a
+                glance if submissions were sent from a suspicious IP address compared to the other locations in the app.
+            </p>
+
             <h2 class="">Explaining the Fraud Score</h2>
             <img class="rounded-lg my-2 sm:my-4" src="../../assets/img/edu-fraudscore.png">
             <p>Each application had a fraud score assigned by the fraud detection algorithm but none of the analysts
@@ -112,7 +126,7 @@
                 reverse engineering the algorithm. I collaborated with the engineer who created the algorithm to
                 understand the algorithm and come up with analyst-friendly names.</p>
         </div>
-        <div id="design">
+        <div id="dash">
             <h2>Dashboard</h2>
             <figure>
                 <img class="rounded-lg" src="../../assets/img/edu-before-dashboard.png"></img>
@@ -135,20 +149,10 @@
                 future phases we prioritized enhancements to allow for even more advanced data filtering and full screen
                 views.</p>
             <p></p>
-
-        </div>
-        <div id="ancillary">
-            <h2>Design System</h2>
-            <p>The client had an existing design system so we adhered to their guidelines. We contributed button
-                variants back to the </p>
         </div>
     </main>
 
-    <footer class="flex justify-between px-8 py-8  bg-white text-sm mb-12">
-        <div id="left" class="text-stone-500">
-            <p>Made by James with Tailwind CSS © 2025</p>
-        </div>
-
+    <footer class="flex justify-between py-8  bg-white text-sm mb-12">
     </footer>
 </body>
 
