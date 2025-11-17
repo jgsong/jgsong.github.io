@@ -22,6 +22,7 @@
     --color-stone-600: oklch(44.4% 0.011 73.639);
     --color-stone-700: oklch(37.4% 0.01 67.558);
     --color-stone-800: oklch(26.8% 0.007 34.298);
+    --color-stone-900: oklch(21.6% 0.006 56.043);
     --color-white: #fff;
     --spacing: 0.25rem;
     --breakpoint-md: 48rem;
@@ -833,6 +834,9 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
   .mb-0 {
     margin-bottom: calc(var(--spacing) * 0);
   }
@@ -1159,6 +1163,9 @@
   .text-stone-800 {
     color: var(--color-stone-800);
   }
+  .text-stone-900 {
+    color: var(--color-stone-900);
+  }
   .uppercase {
     text-transform: uppercase;
   }
@@ -1228,6 +1235,22 @@
       @media (hover: hover) {
         border-top-left-radius: var(--radius-2xl);
         border-top-right-radius: var(--radius-2xl);
+      }
+    }
+  }
+  .hover\:rounded-l-2xl {
+    &:hover {
+      @media (hover: hover) {
+        border-top-left-radius: var(--radius-2xl);
+        border-bottom-left-radius: var(--radius-2xl);
+      }
+    }
+  }
+  .hover\:rounded-r-2xl {
+    &:hover {
+      @media (hover: hover) {
+        border-top-right-radius: var(--radius-2xl);
+        border-bottom-right-radius: var(--radius-2xl);
       }
     }
   }
