@@ -19,14 +19,14 @@
     <title>James Song</title>
 </head>
 
-<body class="flex flex-col h-full text-stone-800 w-full">
+<body class="flex flex-col text-stone-800 w-full">
     <div id="background"
-        class="bg-stone-50 w-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-size-[14px_24px]">
+        class="bg-stone-50 w-full min-h-screen bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-size-[14px_24px]">
         <header>
 
         </header>
 
-        <main class="flex flex-col gap-12 max-w-(--breakpoint-md) py-6 px-6 sm:px-12 sm:py-12 mx-auto">
+        <main class="flex flex-col grow gap-12 max-w-(--breakpoint-md) py-6 px-6 sm:px-12 sm:py-12 mx-auto">
 
             <!-- Hero -->
             <div id="hero">
@@ -55,7 +55,8 @@
             </div>
 
 
-            <div id="loginForm" class="border border-stone-200 bg-stone-50 rounded-2xl flex flex-col gap-4 p-8">
+            <div id="loginForm"
+                class="border border-stone-200 bg-stone-50 rounded-2xl flex flex-col gap-4 p-8 shadow-xs">
                 <h3>Enter the password to see my case studies:</h2>
                     <form id="passwordForm" class="flex flex-col gap-4">
                         <input type="password" id="passwordInput" placeholder="Enter Password" required
@@ -133,7 +134,7 @@
 
         </main>
         <footer class="mx-auto max-w-(--breakpoint-md)">
-            <div id="content" class="flex justify-between text-sm text-stone-700 py-6 px-6 sm:px-12 sm:pb-12">
+            <div id="content" class="flex justify-between text-md text-stone-600 py-6 px-6 sm:px-12 sm:pb-12">
                 <div id="left">
                     Made by James with Tailwind CSS
                 </div>
