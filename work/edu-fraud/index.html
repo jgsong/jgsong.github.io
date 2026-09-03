@@ -19,7 +19,7 @@
     <title>James Song</title>
 </head>
 
-<body class="flex flex-col mx-auto bg-white max-w-prose">
+<body class="flex flex-col bg-white max-w-prose mx-auto w-full">
     <header class="">
         <nav class="flex py-6 px-6 md:px-0">
             <a id="logo" class="cursor-pointer flex gap-2 items-center" href="../../">
@@ -49,61 +49,102 @@
 
     <main class="flex flex-col bg-white prose prose-stone prose-lg text-pretty md:pb-0 md:px-0 py-6 px-6">
         <div id="hero">
-            <div class="font-semibold text-sm uppercase text-stone-700 mb-2">College Fraud Detection</div>
-            <h1 class="not-prose mb-8 text-stone-900">Flagging Fake College Applications</h1>
-            <img class="rounded-lg my-2" src="../../assets/img/edu-hero.png">
+            <div class="font-semibold text-stone-700 mb-2">California Community Colleges</div>
+            <h1 class="mb-8 text-stone-900 font-semibold leading-tight">Redesigning FraudGuard to Catch Fake Students
+            </h1>
+            <figure>
+                <img class="rounded-lg my-2" src="../../assets/img/edu-hero.png">
+            </figure>
+
         </div>
         <div id="overview">
-            <p>In 2025, I led research and redesign of a fraud detection tool over 4 months for a large college system
-                with over 2
-                million students enrolled. Fraudsters scammed over $2.5 million in state aid in 2024 by submitting fake
-                student apps to win
-                financial aid. Because of these "ghost students" taking up class seats, professors and students would
-                sometimes
-                show up
-                to near-empty classrooms. On top of Student
-                applications, had swelled by over 64% year-over-year and
-                fraud analysts were struggling to keep up.
+            <p>California Community
+                Colleges
+                (CCC) is the largest higher education system in America and reported over 1.2 million fraudulent
+                applications in
+                2024. Fraudsters scammed over $10
+                million in
+                student aid and take up limited spots in classes by submitting fake
+                student applications and staying enrolled until they receive financial aid (LA Times).
             </p>
-            <p>
-                The college system had an outdated tool fraud analysts would use to review
-                student application metadata and mark applications fraud or valid. The goal of the redesign was to
+            <p>I was the Lead Product Designer for a 4 month redesign of FraudGuard, CCC's student application fraud
+                detection tool, where I led a senior designer on the
+                first phase of the
+                redesigned FraudGuard, planned workshops, and created a roadmap for the next year in partnership with
+                engineering leads, a
+                fraud analyst working group, and CCC
+                executive leadership.
+            </p>
+            <p>FraudGuard was outdated, lacked critical features, and colleges were moving to AI vendors
+                and DIY
+                efforts. CCC's AI/ML fraud detection model automatically flagged applications it was confident were real
+                or fake, and would pass the rest to fraud analysts to manually review and flag in FraudGuard.
+            </p>
+            <p>The goal was to redesign FraudGuard to
                 improve the speed and accuracy of analysts reviewing student
-                applications so they could keep up with the influx of applications and the improved manual flagging
-                would help train
-                the college system's AI/ML fraud detection to improve automated detection, creating a virtuous cycle.
+                applications so they could better keep up with the volume of applications. Improved manual flagging
+                would help train CCC's AI/ML fraud detection model to improve automated detection, creating a virtuous
+                cycle.
             </p>
-            <p>I led one other designer to deliver a prototype
-                of the first phase of the redesign and collaborated with engineering leads and college system
-                leadership to define the scope for the first phase and create a roadmap for future phases. We presented
-                the
-                prototype to a group of over 80 fraud analysts
-                from across the system to overwhelmingly positive feedback and the redesign is expected to be
-                in production in the next year.
+            <p>We demoed a prototype of the redesign to an anti-fraud working group of 80+ to overwhelmingly positive
+                feedback. The redesign MVP was released
+                in late 2025 to all 116 colleges.
             </p>
         </div>
-        <div id="appdetails">
-            <h2>Redesigning Application Metadata</h2>
-            <p>We learned from contextual inquiries and user interviews that analysts mostly relied on a handful of
-                fields such as IP Address, age, and home addresses
-                before making the decision whether to flag an application as fraudulent or not. They were scattered
-                across the page and some past the fold.</p>
+        <div id="dash">
+            <h2>Better Data Slicing on the Dashboard</h2>
             <figure>
-                <img class="rounded-lg" src="../../assets/img/edu-before-appdetails.png"></img>
-                <figcaption>Before - Metadata was very difficult to scan and commonly compared fields weren't
-                    placed
-                    near each other
+                <img class="rounded-lg" src="../../assets/img/edu-before-dashboard.png"></img>
+                <figcaption>Before Redesign
+                </figcaption>
+            </figure>
+            <p>We spoke to and observed over 30 fraud analysts from a diverse set of colleges across the state. Analysts
+                shared that they rarely used the existing dashboard unless they were looking for a single
+                application and instead imported data into Excel to filter and search for patterns. The table didn't
+                have
+                fields they used to compare.</p>
+            <h3>After</h3>
+            <figure>
+                <img class="rounded-lg my-2 sm:my-4" src="../../assets/img/edu-dashboard.png">
+                <figcaption>After Redesign
                 </figcaption>
             </figure>
 
-
+            <p>My hypothesis was that we could drive adoption by enabling analysts do their data slicing in the
+                dashboard. I worked with the designer on my team to bring in more powerful sorting and filtering, column
+                reordering, and
+                to allow analysts
+                with simpler workflows to work within the tool rather than switch back and forth to a spreadsheet. We
+                prioritized common workflows and saved advanced data filtering capabilities. Analysts can filter and
+                sort on every single column and more data can be viewed in a
+                horizontal scroll. Columns can be reordered to easily compare data side-by-side.</p>
+            <p>One enhancement we had to defer was a full-screen default view for the dashboard table. Users would have
+                appreciated the real estate however FraudGuard lived in a site along with other internal apps and would
+                have significantly delayed the release.</p>
+            <p>Because we had a short timeline, I asked the senior designer to compare and recommend a data grid
+                framework for the dashboard that could support the use cases we observed in our research. We proposed
+                and won support for AG Grid from the UI engineering lead.</p>
+        </div>
+        <div id="appdetails">
+            <h2>Cleaning Up Student Metadata IA</h2>
+            <p>FraudGuard, fraud analysts would use to review
+                applications and flag fraudulent applications. CCC student
+                applications swelled 64% year-over-year and
+                fraud analysts were struggling to keep up.</p>
+            <p>From contextual inquiries and interviews with fraud analysts we learned they each had their own process
+                but they all cross-checked
+                location, age, and IP Address related fields at minimum. There weren't any logical categories and some
+                key fields were below the fold.</p>
+            <figure>
+                <img class="rounded-lg" src="../../assets/img/edu-before-appdetails.png"></img>
+                <figcaption>Before
+                </figcaption>
+            </figure>
             <p>We could improve efficiency by grouping the data into logical
                 categories,
                 prioritizing key fields to the top, and placing commonly compared attributes near each other.</p>
             <figure>
                 <img class="rounded-lg" src="../../assets/img/edu-hero.png"></img>
-                <figcaption>After - Utilizing screen space more efficiently while preserving data density
-                </figcaption>
             </figure>
             <figure>
                 <img class="rounded-lg" src="../../assets/img/edu-appdetails-scrolled.png"></img>
@@ -118,41 +159,37 @@
                 glance if submissions were sent from a suspicious IP address compared to the other locations in the app.
             </p>
 
-            <h2 class="">Explaining the Fraud Score</h2>
-            <img class="rounded-lg my-2 sm:my-4" src="../../assets/img/edu-fraudscore.png">
-            <p>Each application had a fraud score assigned by the fraud detection algorithm but in interviews we learned
-                none of the analysts
-                used this score. They weren't sure how to interpret it since scores were sometimes above 100% and they
-                didn't know how it was calculated.</p>
-            <p>We needed to build trust in it and "show our work" so analysts can compare notes with the
-                score. One constraint was that it couldn't show exact thresholds or reasons to prevent bad actors from
-                reverse engineering the algorithm. I collaborated with the engineer who created the algorithm to
-                understand the algorithm and come up with analyst-friendly names.</p>
-        </div>
-        <div id="dash">
-            <h2>Dashboard</h2>
+            <h2 class="">AI/ML Fraud Score Explainer Card</h2>
             <figure>
-                <img class="rounded-lg" src="../../assets/img/edu-before-dashboard.png"></img>
-                <figcaption>Before - Users could only sort one column at a time and relied on spreadsheets to look for
-                    suspicious trends before coming to
+                <img class="rounded-lg my-2 sm:my-4"
+                    src="../../assets/img/edu-before-dashboard-highlight-fraud-score.png"></img>
+                <figcaption>Before Redesign
                 </figcaption>
             </figure>
+            <p>A common stakeholder frustration was that the Fraud Score, the risk rating the fraud detection algorithm
+                assigns each application, wasn't useful.
+                None of the analysts we spoke to understood what the score meant. This score determined
+                what needed manual review or was automatically flagged as fraud. The score wasn't intuitive,
+                sometimes rose above 100% and there was no guidance on how to interpret 55% or an 88%.
+            </p>
+            <p>I hypothesized that we needed to build trust in it and "show our work" so analysts can compare notes with
+                the
+                score. One constraint we had was that we couldn't reveal the exact threshold or logic that would make an
+                application more suspicious to prevent internal bad
+                actors from
+                reverse engineering the algorithm.</p>
             <figure>
-                <img class="rounded-lg my-2 sm:my-4" src="../../assets/img/edu-dashboard.png">
-                <figcaption>After - Analysts can filter and sort on every single column and more data can be viewed in a
-                    horizontal scroll. Columns can be reordered to easily compare data side-by-side
+                <img class="rounded-lg my-2 sm:my-4" src="../../assets/img/edu-fraudscore.png"></img>
+                <figcaption>After Redesign
                 </figcaption>
             </figure>
-            <p>Fraud analysts would use Excel to filter and search for patterns between
-                fraudulent apps and apps that
-                needed review before and then search and flag those within the tool. I saw an opportunity to enable
-                analysts to do more data slicing in the dashboard so I worked with the designer on my team to bring in
-                features such as
-                multi-row filtering to allow analysts
-                with simpler workflows to work within the tool rather than switch back and forth to a spreadsheet. In
-                future phases we prioritized enhancements to allow for even more advanced data filtering and full screen
-                views.</p>
-            <p></p>
+
+            <p>I collaborated with the lead engineer of the
+                algorithm to map out how the fraud score was calculated and how much we could abstract away to
+                improve
+                user understanding. I translated it to a 0-100 scale, color coded it to create buckets for suspicious
+                applications, and
+                included high-level rationales to improve transparency with analysts. </p>
         </div>
     </main>
 
