@@ -13,7 +13,7 @@ layer(base);
 @config '../tailwind.config.js';
 
 @utility card {
-  @apply rounded-2xl border-stone-200 border-1 bg-stone-50 shadow-xs transition hover:ease-out duration-300 hover:border-[#E45D50] hover:-translate-y-1 hover:scale-[1.025] hover:shadow-lg;
+  @apply rounded-2xl border-stone-200 border bg-stone-50 shadow-xs transition hover:ease-out duration-300 hover:border-[#E45D50] hover:-translate-y-1 hover:scale-[1.025] hover:shadow-lg;
 }
 
 @utility tag {
@@ -28,7 +28,7 @@ layer(base);
   }
 
   h2 {
-    @apply text-xl;
+    @apply text-2xl;
     @apply font-semibold;
   }
 
